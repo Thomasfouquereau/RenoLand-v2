@@ -6,12 +6,13 @@ const toggleMenu = () => {
 
     navButton.addEventListener('click', () => {
         navMenuMobile.classList.toggle('open');
+        
         if (navMenuMobile.classList.contains('open')) {
-            navMenuMobileIcon.src = "../addons/IconClose.svg";
-            navButtonText.textContent = "fermer";
+            navMenuMobileIcon.src = "/addons/IconClose.svg";
+            navButtonText.innerHTML = "fermer";
         } else {
-            navMenuMobileIcon.src = "../addons/IconMenu.svg";
-            navButtonText.textContent = "menu";
+            navMenuMobileIcon.src = "/addons/IconMenu.svg";
+            navButtonText.innerHTML = "menu";
         }
     });
 };
