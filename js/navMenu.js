@@ -8,7 +8,7 @@ const toggleMenu = () => {
         navMenuMobile.classList.toggle('open');
         
         if (navMenuMobile.classList.contains('open')) {
-            navMenuMobileIcon.src = "/addons/IconClose.svg";
+            navMenuMobileIcon.src = "";
             navButtonText.innerHTML = "fermer";
         } else {
             navMenuMobileIcon.src = "/addons/IconMenu.svg";

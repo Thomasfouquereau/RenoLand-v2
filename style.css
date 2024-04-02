@@ -4,8 +4,119 @@ body{
 :root {
     --main-font-color:#37474F ;
     --secondary-font-color:white ;
-    --main-bg-gradient: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,88,168,1) 27%, rgba(0,180,216,1) 100%);
-    --secondary-font-style: 'krub', sans-serif;
+    --main-bg-gradient: linear-gradient(90deg, rgba(6,3,66,1) 0%, rgba(35,88,168,1) 44%, rgba(0,180,216,1) 100%);
+    --secondary-font-family: 'krub', sans-serif;
+    --main-border-radus: 15px;
   }
 
+.Header{
+    transform: translateY(-0.5vh);
+    display: flex;
+    height: 19vw;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--secondary-font-color);
+    background:var(--main-bg-gradient);
+}
 
+.HeaderImg{
+    width: 37vw;
+    height: 25vw;
+    border-radius:var(--main-border-radus);
+    margin-right: 5vw;
+    transform: translateY(3vh);
+}
+
+.HeaderInfo{
+    width:45vw ;
+}
+
+.HeaderInfoTitle{
+    font-size: 3vw;
+    margin-bottom: 0px;
+}
+
+.HeaderInfoText{
+    font-size: 1.2vw;
+    width: 35vw;
+    margin-top: 0.7vw;
+    margin-bottom: 1.5vw;
+}
+
+.HeaderInfoMore{
+    background-color:white ;
+    color: var(--main-font-color);
+    padding: 0.5vw 1.5vw;
+    border-radius: var(--main-border-radus);
+    border: none;
+    font-size: 0.8vw;
+    font-weight: 600;
+    font-style: italic;
+    font-family: var(--secondary-font-family);
+}
+
+@media screen and (max-width: 900px){
+    .Header{
+        transform: translateY(-0.5vh);
+        height: 25vh;
+    }
+    .HeaderImg{
+        transform: translateY(3vh);
+        width: 45vw;
+        height: 28vh;
+        margin-bottom: 1vh;
+    }
+    .HeaderInfo{
+        transform: translateY(2vh);
+    }
+    .HeaderInfoTitle{
+        font-size: 3.3vw;
+    }
+    .HeaderInfoText{
+        margin-bottom: 1.7vh;
+        font-size: 1.6vw;
+    }
+    .HeaderInfoMore{
+        font-size: 1.2vw;
+        padding: 0.5vh 1vw;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .Header{
+        height: 70vh;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        justify-content: flex-start
+    }
+    .HeaderImg{
+        width: 86vw;
+        margin-bottom: 1vh;
+        margin-right: 0px;
+        margin-top: 5vw;
+        transform: translateY(0vh);
+    }
+    .HeaderInfo{
+        transform: translateY(0vh);
+        width: 87vw;
+    }
+    .HeaderInfoTitle{
+        font-size: 8vw;
+    }
+    .HeaderInfoText{
+        margin-bottom: 1.7vh;
+        font-size: 4vw;
+        width: 80vw;
+        margin-top: 1.5vh;
+        margin-bottom: 5vh;
+    }
+    .HeaderInfoMore{
+        position: absolute;
+        font-size: 3.5vw;
+        padding: 1vh 6vw;
+        border-radius: 5px;
+        right: 2vw;
+    }
+}

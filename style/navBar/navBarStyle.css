@@ -15,7 +15,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
+    height: 8vw;
     color: var(--secondary-font-color);
     background:var(--main-bg-gradient);
 }
@@ -58,6 +58,22 @@ li{
     display: none;
 }
 
+@media screen and (max-width: 900px){
+    .NavMenu{
+        height: 10vw;
+    }
+    .NavMenuLogo{
+        width: 5vw;
+    }
+    .NavMenuLink{
+        font-size: 1.5vw;
+        width: 50vw;
+    }
+    .NavMenuLogoText{
+        font-size: 2.5vw;
+    }
+}
+
 @media screen and (max-width: 430px){
     .NavMenu{
         height: 13vh;
@@ -82,7 +98,7 @@ li{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        position: absolute;
+        position:fixed;
         bottom: 17vw;
         right: 8vw;
         width: 33vw;
@@ -100,6 +116,7 @@ li{
     }
 
     .NavMenuLinkMobile.open {
+        z-index: 9999;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
