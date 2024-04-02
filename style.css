@@ -1,0 +1,11 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --main-font-color:#37474F ;
+    --secondary-font-color:white ;
+    --main-bg-gradient: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,88,168,1) 27%, rgba(0,180,216,1) 100%);
+    --secondary-font-style: 'krub', sans-serif;
+  }
+
+

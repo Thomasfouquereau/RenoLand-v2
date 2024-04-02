@@ -1,0 +1,129 @@
+:root {
+    --main-font-color:#37474F ;
+    --secondary-font-color:white ;
+    --main-bg-gradient: linear-gradient(90deg, rgba(6,3,66,1) 0%, rgba(35,88,168,1) 44%, rgba(0,180,216,1) 100%);
+    --secondary-font-family: 'krub', sans-serif;
+    --main-border-radus: 10px;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.NavMenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    color: var(--secondary-font-color);
+    background:var(--main-bg-gradient);
+}
+
+.NavMenuLogo{
+    width: 3vw;
+}
+
+.NavMenuLink{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30vw;
+    height: 10vh;
+    list-style: none;
+    font-size: 0.9vw;
+    font-weight: 500;
+}
+.NavMenuLink :hover{
+    font-weight: 600;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+li{
+    padding: 12px 8px;
+    cursor: pointer;
+}
+
+.NavMenuLogoText{
+    font-family: var(--secondary-font-family);
+    font-size: 1.6vw;
+    font-style: italic;
+    font-weight: 700;
+}
+
+#NavMenuMobileButton{
+    display: none;
+}
+
+.NavMenuLinkMobile{
+    display: none;
+}
+
+@media screen and (max-width: 430px){
+    .NavMenu{
+        height: 13vh;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0px 6vw;
+    }
+
+    .NavMenuLogo{
+        width: 13vw;
+    }
+
+    .NavMenuLink{
+        display: none;
+    }
+
+    .NavMenuLogoText{
+        font-size: 8vw;
+    }
+
+    #NavMenuMobileButton{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        bottom: 17vw;
+        right: 8vw;
+        width: 33vw;
+        height: 5.5vh;
+        border-radius: var(--main-border-radus);
+        border: 1px white;
+        background: var(--main-bg-gradient);
+        color: var(--secondary-font-color);
+        font-family: var(--secondary-font-style);
+        font-size: 4.5vw;
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: 600;
+        padding: 10px;
+    }
+
+    .NavMenuLinkMobile.open {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 3vh 5vw ;
+    }
+
+    .NavMenuLinkMobile{
+        background: var(--main-bg-gradient);
+        position: absolute;
+        list-style: none;
+        bottom: 20vh;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70vw;
+        height: 35vh;
+        border-radius: var(--main-border-radus);
+        color: var(--secondary-font-color);
+        font-family: var(--secondary-font-style);
+        font-size: 5vw;
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: 600;
+
+    }
+
+}
