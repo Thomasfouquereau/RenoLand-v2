@@ -120,3 +120,97 @@ body{
         right: 2vw;
     }
 }
+
+.SectionNav{
+    margin-top:20vh ;
+    margin-bottom:20vh  ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SectionNavHeader{
+    color: var(--main-font-color);
+    font-family: var(--secondary-font-family);
+}
+
+.SectionNavTitle{
+    font-size: 3vw;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.5vw;
+}
+
+.SectionNavText{
+    font-size: 1.5vw;
+    margin-top: 0;
+    text-align: center;
+}
+
+.SectionNavMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SectionNavImgLeft{
+    width: 85vw;
+    height: 15vw;
+    transform: translateX(-5vw);
+}
+
+.SectionNavImgRight{
+    width: 85vw;
+    height: 15vw;
+    transform: translateX(5vw);
+}
+
+.SectionNavCard{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 70vw;
+    z-index: 999;
+}
+
+.SectionNavCardLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(6vw);
+}
+
+.SectionNavCardLinkImg{
+    width: 16vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: var(--main-border-radus) ;
+}
+
+.SectionNavCardLinkTitle{
+    color: var(--secondary-font-color);
+    margin-top: 1vw;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 900px){
+    .SectionNav{
+        margin-top: 10vh;
+    }
+    .SectionNavTitle{
+        font-size: 4vw;
+    }
+    .SectionNavText{
+        font-size: 2vw;
+    }
+    .SectionNavCardLinkTitle{
+        font-size: 1.5vw;
+    }
+    .SectionNavImgRight{
+        height: 17vw;
+    }
+}
