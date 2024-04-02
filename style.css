@@ -214,3 +214,45 @@ body{
         height: 17vw;
     }
 }
+
+@media screen and (max-width: 430px){
+    .SectionNavTitle{
+        font-size: 8vw;
+        margin-bottom: 1.3vh;
+    }
+    .SectionNavText{
+        font-size: 4vw;
+        width: 80vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .SectionNavImgRight,.SectionNavImgLeft{
+        display: none;
+    }
+    .SectionNavCard{
+        margin-top: 9vw;
+        flex-direction: column;
+        background: var(--main-bg-gradient);
+        border-radius: var(--main-border-radus);
+        align-items: flex-end;
+        height: 62vh;
+        transform: translateX(-50%);
+    }
+    .SectionNavCardLinkImg{
+        width: 50vw;
+        height: 30vw;
+    }
+    .SectionNavCardLink{
+        background-color: var(--secondary-font-color);
+        border-radius: var(--main-border-radus);
+        width: 50vw;
+        height: 35vw;
+        padding: 1vw;
+        transform: translateY(0vw);
+        transform: translateX(50%);
+    }
+    .SectionNavCardLinkTitle{
+        color: var(--main-font-color);
+        font-size: 2.5vw;
+    }
+}

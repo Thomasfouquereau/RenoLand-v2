@@ -123,6 +123,7 @@ li{
         justify-content: space-evenly;
         align-items: flex-start;
         padding: 3vh 5vw ;
+        position:fixed;
     }
 
     .NavMenuLinkMobile{
