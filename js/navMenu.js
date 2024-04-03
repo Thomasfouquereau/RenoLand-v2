@@ -8,10 +8,10 @@ const toggleMenu = () => {
         navMenuMobile.classList.toggle('open');
         
         if (navMenuMobile.classList.contains('open')) {
-            navMenuMobileIcon.src = "";
+            navMenuMobileIcon.src = "./addons/IconClose.svg";
             navButtonText.innerHTML = "fermer";
         } else {
-            navMenuMobileIcon.src = "/addons/IconMenu.svg";
+            navMenuMobileIcon.src = "./addons/IconMenu.svg";
             navButtonText.innerHTML = "menu";
         }
     });

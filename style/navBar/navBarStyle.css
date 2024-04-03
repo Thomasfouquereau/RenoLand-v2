@@ -121,10 +121,35 @@ li{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: flex-start;
         padding: 3vh 5vw ;
         position:fixed;
     }
+
+    .NavMenuLinkMobile.open::after{
+        position: fixed;
+        z-index: -100;
+        content: "";
+        width: 101vw;
+        height: 90vh;
+        margin-left: 44%;
+        border-radius: 30px;
+        transform: translateX(-50%);
+        background-color: #37474fd3;
+    }
+
+    .NavMenuLinkMobile.open::before{
+        position: fixed;
+        z-index: -10;
+        content: "";
+        padding: 3vh 5vw ;
+        width: 70vw;
+        height: 35vh;
+        margin-left: 44%;
+        border-radius: 10px;
+        transform: translateX(-50%);
+        background: var(--main-bg-gradient);
+    }
+
 
     .NavMenuLinkMobile{
         background: var(--main-bg-gradient);
