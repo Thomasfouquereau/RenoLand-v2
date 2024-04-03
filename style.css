@@ -1,50 +1,53 @@
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
+
 :root {
-    --main-font-color:#37474F ;
-    --secondary-font-color:white ;
-    --main-bg-gradient: linear-gradient(90deg, rgba(6,3,66,1) 0%, rgba(35,88,168,1) 44%, rgba(0,180,216,1) 100%);
+    --main-font-color: #37474F;
+    --secondary-font-color: white;
+    --main-bg-gradient: linear-gradient(90deg, rgba(6, 3, 66, 1) 0%, rgba(35, 88, 168, 1) 44%, rgba(0, 180, 216, 1) 100%);
     --secondary-font-family: 'krub', sans-serif;
     --main-border-radus: 15px;
-  }
+}
 
-.Header{
+/* _____________Header______________ */
+
+.Header {
     transform: translateY(-0.5vh);
     display: flex;
     height: 19vw;
     flex-direction: row;
     justify-content: center;
     color: var(--secondary-font-color);
-    background:var(--main-bg-gradient);
+    background: var(--main-bg-gradient);
 }
 
-.HeaderImg{
+.HeaderImg {
     width: 37vw;
     height: 25vw;
-    border-radius:var(--main-border-radus);
+    border-radius: var(--main-border-radus);
     margin-right: 5vw;
     transform: translateY(3vh);
 }
 
-.HeaderInfo{
-    width:45vw ;
+.HeaderInfo {
+    width: 45vw;
 }
 
-.HeaderInfoTitle{
+.HeaderInfoTitle {
     font-size: 3vw;
     margin-bottom: 0px;
 }
 
-.HeaderInfoText{
+.HeaderInfoText {
     font-size: 1.2vw;
     width: 35vw;
     margin-top: 0.7vw;
     margin-bottom: 1.5vw;
 }
 
-.HeaderInfoMore{
-    background-color:white ;
+.HeaderInfoMore {
+    background-color: white;
     color: var(--main-font-color);
     padding: 0.5vw 1.5vw;
     border-radius: var(--main-border-radus);
@@ -55,64 +58,74 @@ body{
     font-family: var(--secondary-font-family);
 }
 
-@media screen and (max-width: 900px){
-    .Header{
+@media screen and (max-width: 900px) {
+    .Header {
         transform: translateY(-0.5vh);
         height: 25vh;
     }
-    .HeaderImg{
+
+    .HeaderImg {
         transform: translateY(3vh);
         width: 45vw;
         height: 28vh;
         margin-bottom: 1vh;
     }
-    .HeaderInfo{
+
+    .HeaderInfo {
         transform: translateY(2vh);
     }
-    .HeaderInfoTitle{
+
+    .HeaderInfoTitle {
         font-size: 3.3vw;
     }
-    .HeaderInfoText{
+
+    .HeaderInfoText {
         margin-bottom: 1.7vh;
         font-size: 1.6vw;
     }
-    .HeaderInfoMore{
+
+    .HeaderInfoMore {
         font-size: 1.2vw;
         padding: 0.5vh 1vw;
         border-radius: 6px;
     }
 }
 
-@media screen and (max-width: 430px){
-    .Header{
+@media screen and (max-width: 430px) {
+    .Header {
         height: 70vh;
         flex-direction: column;
         align-items: center;
         position: relative;
         justify-content: flex-start
     }
-    .HeaderImg{
+
+    .HeaderImg {
         width: 86vw;
         margin-bottom: 1vh;
         margin-right: 0px;
         margin-top: 5vw;
         transform: translateY(0vh);
     }
-    .HeaderInfo{
+
+    .HeaderInfo {
         transform: translateY(0vh);
         width: 87vw;
     }
-    .HeaderInfoTitle{
+
+    .HeaderInfoTitle {
         font-size: 8vw;
     }
-    .HeaderInfoText{
+
+    .HeaderInfoText {
         margin-bottom: 1.7vh;
         font-size: 4vw;
         width: 80vw;
         margin-top: 1.5vh;
         margin-bottom: 5vh;
     }
-    .HeaderInfoMore{
+
+    .HeaderInfoMore {
         position: absolute;
         font-size: 3.5vw;
         padding: 1vh 6vw;
@@ -121,20 +134,22 @@ body{
     }
 }
 
-.SectionNav{
-    margin-top:20vh ;
-    margin-bottom:20vh  ;
+/* _____________SectionNav______________ */
+
+.SectionNav {
+    margin-top: 20vh;
+    margin-bottom: 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.SectionNavHeader{
+.SectionHeader {
     color: var(--main-font-color);
     font-family: var(--secondary-font-family);
 }
 
-.SectionNavTitle{
+.SectionTitle {
     font-size: 3vw;
     font-weight: 600;
     font-style: italic;
@@ -143,31 +158,31 @@ body{
     margin-bottom: 0.5vw;
 }
 
-.SectionNavText{
+.SectionText {
     font-size: 1.5vw;
     margin-top: 0;
     text-align: center;
 }
 
-.SectionNavMain{
+.SectionNavMain {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.SectionNavImgLeft{
+.SectionNavImgLeft {
     width: 85vw;
     height: 15vw;
     transform: translateX(-5vw);
 }
 
-.SectionNavImgRight{
+.SectionNavImgRight {
     width: 85vw;
     height: 15vw;
     transform: translateX(5vw);
 }
 
-.SectionNavCard{
+.SectionNavCard {
     display: flex;
     justify-content: space-around;
     position: absolute;
@@ -175,21 +190,21 @@ body{
     z-index: 999;
 }
 
-.SectionNavCardLink{
+.SectionNavCardLink {
     display: flex;
     flex-direction: column;
     align-items: center;
     transform: translateY(6vw);
 }
 
-.SectionNavCardLinkImg{
+.SectionNavCardLinkImg {
     width: 16vw;
     height: 20vw;
     object-fit: cover;
-    border-radius: var(--main-border-radus) ;
+    border-radius: var(--main-border-radus);
 }
 
-.SectionNavCardLinkTitle{
+.SectionNavCardLinkTitle {
     color: var(--secondary-font-color);
     margin-top: 1vw;
     font-size: 1vw;
@@ -197,52 +212,68 @@ body{
     font-weight: 500;
 }
 
-@media screen and (max-width: 900px){
-    .SectionNav{
+@media screen and (max-width: 900px) {
+    .SectionNav {
         margin-top: 10vh;
     }
-    .SectionNavTitle{
+
+    .SectionTitle {
         font-size: 4vw;
     }
-    .SectionNavText{
-        font-size: 2vw;
+
+    .SectionText {
+        font-size: 2
     }
-    .SectionNavCardLinkTitle{
+
+    .SectionNavCardLinkTitle {
         font-size: 1.5vw;
     }
-    .SectionNavImgRight{
+
+    .SectionNavImgRight {
         height: 17vw;
     }
 }
 
-@media screen and (max-width: 430px){
-    .SectionNavTitle{
+@media screen and (max-width: 430px) {
+    .SectionNavMain {
+        height: 150vw;
+    }
+
+    .SectionTitle {
         font-size: 8vw;
         margin-bottom: 1.3vh;
     }
-    .SectionNavText{
+
+    .SectionText {
         font-size: 4vw;
         width: 80vw;
         margin-left: 50%;
         transform: translateX(-50%);
     }
-    .SectionNavImgRight,.SectionNavImgLeft{
+
+    .SectionNavImgRight,
+    .SectionNavImgLeft {
         display: none;
     }
-    .SectionNavCard{
+
+    .SectionNavCard {
         margin-top: 9vw;
         flex-direction: column;
         background: var(--main-bg-gradient);
         border-radius: var(--main-border-radus);
         align-items: flex-end;
         height: 62vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
         transform: translateX(-50%);
     }
-    .SectionNavCardLinkImg{
+
+    .SectionNavCardLinkImg {
         width: 50vw;
         height: 30vw;
     }
-    .SectionNavCardLink{
+
+    .SectionNavCardLink {
         background-color: var(--secondary-font-color);
         border-radius: var(--main-border-radus);
         width: 50vw;
@@ -251,8 +282,216 @@ body{
         transform: translateY(0vw);
         transform: translateX(50%);
     }
-    .SectionNavCardLinkTitle{
+
+    .SectionNavCardLinkTitle {
         color: var(--main-font-color);
         font-size: 2.5vw;
+    }
+}
+
+/* _____________SectionPmr______________ */
+
+/* No Reversing */
+.SectionPmr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SectionPmrCard {
+    display: flex;
+    flex-direction: column;
+    background: var(--main-bg-gradient);
+    width: 65vw;
+    border-radius: var(--main-border-radus);
+    margin-top: 10vw;
+    color: var(--secondary-font-color);
+    transform: translateX(7vw);
+}
+
+/* Reversing */
+.SectionPmrCardReversing {
+    display: flex;
+    flex-direction: column;
+    background: var(--main-bg-gradient);
+    width: 65vw;
+    border-radius: var(--main-border-radus);
+    margin-top: 10vw;
+    color: var(--secondary-font-color);
+    transform: translateX(-7vw);
+}
+
+/* No Reversing */
+.SectionPmrCardImgInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Reversing */
+.SectionPmrCardImgInfoReversing {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* No Reversing */
+.SectionPmrCardImg {
+    border-radius: var(--main-border-radus);
+    max-width: 35vw;
+    transform: translate(-5vw, -4vw);
+}
+
+/* Reversing */
+.SectionPmrCardImgReversing {
+    border-radius: var(--main-border-radus);
+    max-width: 35vw;
+    transform: translate(5vw, -4vw);
+}
+
+/* No Reversing */
+.SectionPmrCardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-right: 2vw;
+}
+
+/* Reversing */
+.SectionPmrCardInfoReversing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 2vw;
+}
+
+/* No Reversing */
+.SectionPmrCardInfoTitle {
+    font-size: 2.2vw;
+    margin: 0;
+    margin-bottom: 1.5vw;
+}
+
+.SectionPmrCardInfoText {
+    font-size: 1.2vw;
+}
+
+.SectionPmrCardPriceLink {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3vw;
+    padding: 0vw 0 2vw 0;
+}
+
+/* Reversing */
+.SectionPmrCardPriceLinkReversing {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 3vw;
+    padding: 0vw 0 2vw 0;
+}
+
+/* No Reversing */
+.SectionPmrCardInfoLink {
+    background-color: var(--secondary-font-color);
+    color: var(--main-font-color);
+    padding: 0.5vw 1.5vw;
+    border-radius: var(--main-border-radus);
+    border: none;
+    font-size: 0.8vw;
+    font-weight: 600;
+    font-style: italic;
+    font-family: var(--secondary-font-family);
+}
+
+.SectionPmrCardPrice {
+    font-family: var(--secondary-font-family);
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 900px) {
+
+    /* all*/
+    .SectionPmrCardInfoLink {
+        font-size: 1.2vw;
+        padding: 0.5vh 1vw;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    /* No Reversing */
+    .SectionPmrCard {
+        width: 85vw;
+        height: 45vw;
+        border-radius: 5px;
+        transform: translateX(3vw);
+        justify-content: space-around;
+    }
+
+    /* Reversing */
+    .SectionPmrCardReversing {
+        width: 85vw;
+        height: 45vw;
+        border-radius: 5px;
+        transform: translateX(-3vw);
+        justify-content: space-around;
+    }
+
+    /* No Reversing */
+    .SectionPmrCardImg {
+        border-radius: 5px;
+        max-width: 40vw;
+        transform: translate(-5vw, -7vw);
+    }
+
+    /* Reversing */
+    .SectionPmrCardImgReversing {
+        border-radius: 5px;
+        max-width: 40vw;
+        transform: translate(5vw, -7vw);
+    }
+
+    /* No Reversing */
+    .SectionPmrCardInfo {
+        margin-right: 4vw;
+        margin-top: 2vw;
+    }
+
+    /* Reversing */
+    .SectionPmrCardInfoReversing {
+        margin-left: 4vw;
+        margin-top: 2vw;
+    }
+
+    /* all*/
+    .SectionPmrCardInfoTitle {
+        font-size: 4vw;
+        margin-bottom: 1vw;
+    }
+
+    /* all*/
+    .SectionPmrCardInfoText {
+        font-size: 2vw;
+    }
+
+    /* all*/
+    .SectionPmrCardPrice {
+        font-size: 2.5vw;
+    }
+
+    /* all*/
+    .SectionPmrCardInfoLink {
+        font-size: 2vw;
+        padding: 0.6vh 4vw;
+        border-radius: 5px;
     }
 }
