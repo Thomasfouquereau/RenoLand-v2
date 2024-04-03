@@ -292,13 +292,13 @@ body {
 /* _____________SectionPmr______________ */
 
 /* No Reversing */
-.SectionPmr {
+.SectionMain {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.SectionPmrCard {
+.SectionMainCard {
     display: flex;
     flex-direction: column;
     background: var(--main-bg-gradient);
@@ -310,7 +310,7 @@ body {
 }
 
 /* Reversing */
-.SectionPmrCardReversing {
+.SectionMainCardReversing {
     display: flex;
     flex-direction: column;
     background: var(--main-bg-gradient);
@@ -322,14 +322,14 @@ body {
 }
 
 /* No Reversing */
-.SectionPmrCardImgInfo {
+.SectionMainCardImgInfo {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 /* Reversing */
-.SectionPmrCardImgInfoReversing {
+.SectionMainCardImgInfoReversing {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -337,7 +337,7 @@ body {
 }
 
 /* No Reversing */
-.SectionPmrCardImg {
+.SectionMainCardImg {
     border-radius: var(--main-border-radus);
     max-width: 35vw;
     height: 28vw;
@@ -346,7 +346,7 @@ body {
 }
 
 /* Reversing */
-.SectionPmrCardImgReversing {
+.SectionMainCardImgReversing {
     border-radius: var(--main-border-radus);
     max-width: 35vw;
     height: 28vw;
@@ -355,7 +355,7 @@ body {
 }
 
 /* No Reversing */
-.SectionPmrCardInfo {
+.SectionMainCardInfo {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -364,7 +364,7 @@ body {
 }
 
 /* Reversing */
-.SectionPmrCardInfoReversing {
+.SectionMainCardInfoReversing {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -373,17 +373,17 @@ body {
 }
 
 /* No Reversing */
-.SectionPmrCardInfoTitle {
+.SectionMainCardInfoTitle {
     font-size: 2.2vw;
     margin: 0;
     margin-bottom: 1.5vw;
 }
 
-.SectionPmrCardInfoText {
+.SectionMainCardInfoText {
     font-size: 1.2vw;
 }
 
-.SectionPmrCardPriceLink {
+.SectionMainCardPriceLink {
     display: flex;
     justify-content: space-between;
     margin: 0 3vw;
@@ -391,7 +391,7 @@ body {
 }
 
 /* Reversing */
-.SectionPmrCardPriceLinkReversing {
+.SectionMainCardPriceLinkReversing {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -400,7 +400,7 @@ body {
 }
 
 /* No Reversing */
-.SectionPmrCardInfoLink {
+.SectionMainCardInfoLink {
     background-color: var(--secondary-font-color);
     color: var(--main-font-color);
     padding: 0.5vw 1.5vw;
@@ -412,7 +412,7 @@ body {
     font-family: var(--secondary-font-family);
 }
 
-.SectionPmrCardPrice {
+.SectionMainCardPrice {
     font-family: var(--secondary-font-family);
     font-style: italic;
     text-transform: uppercase;
@@ -423,37 +423,44 @@ body {
 @media screen and (max-width: 900px) {
 
     /* all*/
-    .SectionPmrCardInfoLink {
+    .SectionMainCardInfoLink {
         font-size: 1.2vw;
         padding: 0.5vh 1vw;
         border-radius: 6px;
     }
 
     /* No Reversing */
-    .SectionPmrCard {
+    .SectionMainCard {
         width: 72vw;
     }
 
     /* Reversing */
-    .SectionPmrCardReversing {
+    .SectionMainCardReversing {
         width: 72vw;
     }
 
     /* No Reversing */
-    .SectionPmrCardInfo {
+    .SectionMainCardInfo {
         margin-right: 5.2vw;
     }
 
     /* Reversing */
-    .SectionPmrCardInfoReversing {
+    .SectionMainCardInfoReversing {
         margin-left: 5.2vw;
     }
 }
 
 @media screen and (max-width: 430px) {
 
+    /* __________________all__________________max-width: 430px__ */
+
+    .SectionTitle{
+        margin: 0vw 5vw;
+    }
+
+
     /* No Reversing */
-    .SectionPmrCard {
+    .SectionMainCard {
         width: 100vw;
         height: 130vw;
         border-radius: 5px;
@@ -463,7 +470,7 @@ body {
     }
 
     /* Reversing */
-    .SectionPmrCardReversing{
+    .SectionMainCardReversing{
         width: 100vw;
         height: 130vw;
         border-radius: 5px;
@@ -473,7 +480,7 @@ body {
     }
 
     /* Reversing */
-    .SectionPmrCardReversing {
+    .SectionMainCardReversing {
         width: 100vw;
         height: 130vw;
         border-radius: 5px;
@@ -482,17 +489,17 @@ body {
     }
 
     /* No Reversing */
-    .SectionPmrCardImgInfo {
+    .SectionMainCardImgInfo {
         flex-direction: column
     }
 
     /* Reversing */
-    .SectionPmrCardImgInfoReversing {
+    .SectionMainCardImgInfoReversing {
         flex-direction: column
     }
 
     /* No Reversing */
-    .SectionPmrCardImg {
+    .SectionMainCardImg {
         border-radius: 5px;
         min-width: 80vw;
         min-height: 60vw;
@@ -500,7 +507,7 @@ body {
     }
 
     /* Reversing */
-    .SectionPmrCardImgReversing {
+    .SectionMainCardImgReversing {
         border-radius: 5px;
         min-width: 80vw;
         min-height: 60vw;
@@ -508,7 +515,7 @@ body {
     }
 
     /* No Reversing */
-    .SectionPmrCardInfo {
+    .SectionMainCardInfo {
         margin-right: 7vw;
         margin-left: 7vw;
         margin-top: 2vw;
@@ -516,45 +523,45 @@ body {
     }
 
     /* Reversing */
-    .SectionPmrCardInfoReversing {
+    .SectionMainCardInfoReversing {
         margin-right: 7vw;
         margin-left: 7vw;
         transform: translate(-0vw, -20vw);
     }
 
     /* all*/
-    .SectionPmrCardInfoTitle {
+    .SectionMainCardInfoTitle {
         font-size: 7vw;
         font-style: italic;
         margin-bottom: 1vw;
     }
 
     /* all*/
-    .SectionPmrCardInfoText {
+    .SectionMainCardInfoText {
         font-size: 4vw;
     }
 
     /* No Reversing */
-    .SectionPmrCardPriceLink{
+    .SectionMainCardPriceLink{
         margin-right: 7.5vw;
         margin-left: 7.5vw;
         transform: translate(-0vw, -9vw);
     }
 
     /* Reversing */
-    .SectionPmrCardPriceLinkReversing{
+    .SectionMainCardPriceLinkReversing{
         margin-right: 7.5vw;
         margin-left: 7.5vw;
         transform: translate(-0vw, -9vw);
     }
 
     /* all*/
-    .SectionPmrCardPrice {
+    .SectionMainCardPrice {
         font-size: 4vw;
     }
 
     /* all*/
-    .SectionPmrCardInfoLink {
+    .SectionMainCardInfoLink {
         font-size: 3vw;
         padding: 0.6vh 4vw;
         border-radius: 5px;
