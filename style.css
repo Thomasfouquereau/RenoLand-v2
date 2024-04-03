@@ -386,6 +386,7 @@ body {
 .SectionMainCardPriceLink {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 3vw;
     padding: 0vw 0 2vw 0;
 }
@@ -418,6 +419,7 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.5vw;
+    
 }
 
 @media screen and (max-width: 900px) {
@@ -534,8 +536,8 @@ body {
 
     /* all*/
     .SectionMainCardInfoLink {
-        font-size: 3.3vw;
-        padding: 0.6vh 4vw;
+        font-size: 3.5vw;
+        padding: 0.8vh 5vw;
         border-radius: 5px;
     }
 }
@@ -756,18 +758,21 @@ body {
 
     /* No Reversing */
     .SectionMainCardElecInfoLink{
-        bottom: 6vw;
+        bottom: 11.5vw;
         padding: 2vw 4vw;
-        font-size: 4vw;
-        margin-left: 62%;
+        font-size: 3.5vw;
+        padding: 0.8vh 5vw;
+        border-radius: 5px;
+        margin-left: 66%;
     }
 
     /* Reversing */
     .SectionMainCardElecInfoLinkReversing{
-        bottom: 7vw;
-        padding: 2vw 4vw;
+        bottom: 11.5vw;
         right: 5vw;
-        font-size: 4vw;
+        font-size: 3.5vw;
+        padding: 0.8vh 5vw;
+        border-radius: 5px;
     }
     
 }
