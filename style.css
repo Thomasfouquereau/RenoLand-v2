@@ -6,6 +6,7 @@ body {
     --main-font-color: #37474F;
     --secondary-font-color: white;
     --main-bg-gradient: linear-gradient(90deg, rgba(6, 3, 66, 1) 0%, rgba(35, 88, 168, 1) 44%, rgba(0, 180, 216, 1) 100%);
+    --secondary-bg-gradient: linear-gradient(90deg, rgba(255, 180, 27, 1) 0%, rgba(255, 197, 40, 1) 63%, rgba(254, 228, 64, 1) 100%);
     --secondary-font-family: 'krub', sans-serif;
     --main-border-radus: 15px;
 }
@@ -214,7 +215,7 @@ body {
 
 @media screen and (max-width: 900px) {
     .SectionNav {
-        margin-top: 10vh;
+        margin-top: 5vh;
     }
 
     .SectionTitle {
@@ -235,13 +236,13 @@ body {
 }
 
 @media screen and (max-width: 430px) {
+    
     .SectionNavMain {
         height: 150vw;
     }
 
     .SectionTitle {
         font-size: 8vw;
-        margin-bottom: 1.3vh;
     }
 
     .SectionText {
@@ -289,7 +290,7 @@ body {
     }
 }
 
-/* _____________SectionPmr______________ */
+/* _____________Section-Pmr______________ */
 
 /* No Reversing */
 .SectionMain {
@@ -304,7 +305,6 @@ body {
     background: var(--main-bg-gradient);
     width: 65vw;
     border-radius: var(--main-border-radus);
-    margin-top: 10vw;
     color: var(--secondary-font-color);
     transform: translateX(7vw);
 }
@@ -424,29 +424,23 @@ body {
 
     /* all*/
     .SectionMainCardInfoLink {
-        font-size: 1.2vw;
+        font-size: 1.5vw;
         padding: 0.5vh 1vw;
         border-radius: 6px;
     }
 
-    /* No Reversing */
-    .SectionMainCard {
+    .SectionMainCardPrice{
+        font-size: 2vw;
+    }
+
+    /* No Reversing *//* Reversing */
+    .SectionMainCard,.SectionMainCardReversing{
         width: 72vw;
     }
 
-    /* Reversing */
-    .SectionMainCardReversing {
-        width: 72vw;
-    }
-
-    /* No Reversing */
-    .SectionMainCardInfo {
+    /* No Reversing *//* Reversing */
+    .SectionMainCardInfo,.SectionMainCardInfoReversing{
         margin-right: 5.2vw;
-    }
-
-    /* Reversing */
-    .SectionMainCardInfoReversing {
-        margin-left: 5.2vw;
     }
 }
 
@@ -454,29 +448,20 @@ body {
 
     /* __________________all__________________max-width: 430px__ */
 
-    .SectionTitle{
+    .SectionTitle {
         margin: 0vw 5vw;
+        margin-top: 10vw;
     }
 
 
-    /* No Reversing */
-    .SectionMainCard {
+    /* No Reversing *//* Reversing */
+    .SectionMainCard,.SectionMainCardReversing {
         width: 100vw;
         height: 130vw;
         border-radius: 5px;
         transform: translateX(0vw);
         justify-content: space-around;
-        margin-top: 50vw;
-    }
-
-    /* Reversing */
-    .SectionMainCardReversing{
-        width: 100vw;
-        height: 130vw;
-        border-radius: 5px;
-        transform: translateX(0vw);
-        justify-content: space-around;
-        margin-top: 50vw;
+        margin-top: 45vw;
     }
 
     /* Reversing */
@@ -488,26 +473,13 @@ body {
         justify-content: space-around;
     }
 
-    /* No Reversing */
-    .SectionMainCardImgInfo {
+    /* No Reversing *//* Reversing */
+    .SectionMainCardImgInfo,.SectionMainCardImgInfoReversing {
         flex-direction: column
     }
 
-    /* Reversing */
-    .SectionMainCardImgInfoReversing {
-        flex-direction: column
-    }
-
-    /* No Reversing */
-    .SectionMainCardImg {
-        border-radius: 5px;
-        min-width: 80vw;
-        min-height: 60vw;
-        transform: translate(-0vw, -30vw);
-    }
-
-    /* Reversing */
-    .SectionMainCardImgReversing {
+    /* No Reversing */ /* Reversing */
+    .SectionMainCardImg,.SectionMainCardImgReversing {
         border-radius: 5px;
         min-width: 80vw;
         min-height: 60vw;
@@ -531,25 +503,25 @@ body {
 
     /* all*/
     .SectionMainCardInfoTitle {
-        font-size: 7vw;
+        font-size: 8vw !important;
         font-style: italic;
         margin-bottom: 1vw;
     }
 
     /* all*/
     .SectionMainCardInfoText {
-        font-size: 4vw;
+        font-size: 4vw !important;
     }
 
     /* No Reversing */
-    .SectionMainCardPriceLink{
+    .SectionMainCardPriceLink {
         margin-right: 7.5vw;
         margin-left: 7.5vw;
         transform: translate(-0vw, -9vw);
     }
 
     /* Reversing */
-    .SectionMainCardPriceLinkReversing{
+    .SectionMainCardPriceLinkReversing {
         margin-right: 7.5vw;
         margin-left: 7.5vw;
         transform: translate(-0vw, -9vw);
@@ -557,13 +529,245 @@ body {
 
     /* all*/
     .SectionMainCardPrice {
-        font-size: 4vw;
+        font-size: 4.3vw;
     }
 
     /* all*/
     .SectionMainCardInfoLink {
-        font-size: 3vw;
+        font-size: 3.3vw;
         padding: 0.6vh 4vw;
         border-radius: 5px;
     }
+}
+
+/* _____________Section-Elec______________ */
+/* No Reversing */
+.SectionMainCardElec {
+    display: flex;
+    flex-direction: column;
+    background: var(--secondary-bg-gradient);
+    width: 65vw;
+    height: 25vw;
+    border-radius: var(--main-border-radus);
+    margin-bottom: 6vw;
+    color: var(--secondary-font-color);
+    transform: translateX(-5vw);
+}
+
+/* Reversing */
+.SectionMainCardElecReversing {
+    display: flex;
+    flex-direction: column;
+    background: var(--secondary-bg-gradient);
+    width: 65vw;
+    height: 25vw;
+    border-radius: var(--main-border-radus);
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    color: var(--secondary-font-color);
+    transform: translateX(5vw);
+}
+
+/* No Reversing */
+.SectionMainCardElecImgInfo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 3vw;
+    z-index: 99;
+}
+
+/* Reversing */
+.SectionMainCardElecImgInfoReversing {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 3vw;
+    z-index: 99;
+}
+
+/* No Reversing */
+.SectionMainCardElecImg {
+    border-radius: var(--main-border-radus);
+    min-width: 35vw;
+    height: 28vw;
+    object-fit: cover;
+    transform: translate(-5vw, 4vw);
+}
+
+/* Reversing */
+.SectionMainCardElecImgReversing {
+    border-radius: var(--main-border-radus);
+    min-width: 35vw;
+    height: 28vw;
+    object-fit: cover;
+    transform: translate(5vw, 4vw);
+}
+
+/* No Reversing */
+.SectionMainCardElecInfoLink {
+    background-color: var(--secondary-font-color);
+    color: var(--main-font-color);
+    padding: 0.5vw 1.5vw;
+    border-radius: var(--main-border-radus);
+    border: none;
+    font-size: 0.8vw;
+    font-weight: 600;
+    font-style: italic;
+    font-family: var(--secondary-font-family);
+    position: absolute;
+    left: -3.5vw;
+    bottom: -9vw;
+    z-index: 999;
+}
+
+/* Reversing */
+.SectionMainCardElecInfoLinkReversing {
+    background-color: var(--secondary-font-color);
+    color: var(--main-font-color);
+    padding: 0.5vw 1.5vw;
+    border-radius: var(--main-border-radus);
+    border: none;
+    font-size: 0.8vw;
+    font-weight: 600;
+    font-style: italic;
+    font-family: var(--secondary-font-family);
+    position: absolute;
+    right: -3.5vw;
+    bottom: -9vw;
+    z-index: 999;
+}
+
+/* No Reversing */
+.SectionMainCardElecPrice {
+    font-family: var(--secondary-font-family);
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5vw;
+    background: var(--secondary-bg-gradient);
+    border-radius: var(--main-border-radus);
+    width: 50vw;
+    padding: 1.2vw 4vw;
+    text-align: right;
+    transform: translateY(-5vw);
+}
+
+/* Reversing */
+.SectionMainCardElecPriceReversing {
+    font-family: var(--secondary-font-family);
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5vw;
+    background: var(--secondary-bg-gradient);
+    border-radius: var(--main-border-radus);
+    width: 50vw;
+    padding: 1.2vw 4vw;
+    text-align: left;
+    transform: translate(6vw, -5vw);
+}
+
+@media screen and (max-width: 900px) {
+
+    /* No Reversing */
+    .SectionMainCardElec {
+        width: 75vw;
+        height: 26vw;
+        border-radius: 5px;
+        transform: translateX(-1vw);
+    }
+
+    /* Reversing */
+    .SectionMainCardElecReversing {
+        width: 75vw;
+        height: 26vw;
+        border-radius: 5px;
+        transform: translateX(1vw);
+    }
+
+    /* No Reversing *//* Reversing */
+    .SectionMainCardElecPrice,.SectionMainCardElecPriceReversing {
+        font-size: 2vw;
+        transform: translateY(-3vw);
+    }
+
+    /* No Reversing *//* Reversing */
+    .SectionMainCardElecInfoLink,.SectionMainCardElecInfoLinkReversing{
+        border-radius: 5px;
+        font-size: 1.3vw;
+        bottom: -7.5vw;
+    }
+
+    .SectionMainCardInfoTitle{
+        font-size: 2.5vw;
+        margin-bottom: 0;
+    }
+
+    .SectionMainCardInfoText{
+        font-size: 1.5vw;
+    }
+
+     /* all*/
+}
+
+@media screen and (max-width: 430px) {
+
+    /* No Reversing *//* Reversing */
+    .SectionMainCardElec,.SectionMainCardElecReversing {
+        width: 100vw;
+        height: 140vw;
+        border-radius: 5px;
+        transform: translateX(0vw);
+        justify-content: space-around;
+        margin-top: 40vw;
+    }
+
+    /* No Reversing *//* Reversing */
+    .SectionMainCardElecImgInfo,.SectionMainCardElecImgInfoReversing {
+        flex-direction: column
+    }
+
+    /* No Reversing */ /* Reversing */
+    .SectionMainCardElecImg,.SectionMainCardElecImgReversing {
+        border-radius: 5px;
+        min-width: 80vw;
+        min-height: 60vw;
+        transform: translate(-50%, -30vw);
+        margin-left: 50%;
+    }
+
+    /* No Reversing *//* Reversing */
+    .SectionMainCardElecPriceLink,.SectionMainCardElecPriceLinkReversing {
+        margin-right: 7.5vw;
+        margin-left: 7.5vw;
+        transform: translate(-0vw, -9vw);
+    }
+
+    /* No Reversing *//* Reversing */
+    .SectionMainCardElecPrice,.SectionMainCardElecPriceReversing{
+        background: none;
+        font-size: 4.5vw;
+        transform: translateY(-10vw);
+        margin-left: 4vw;
+        text-align: left;
+    }
+
+    /* No Reversing */
+    .SectionMainCardElecInfoLink{
+        bottom: 6vw;
+        padding: 2vw 4vw;
+        font-size: 4vw;
+        margin-left: 62%;
+    }
+
+    /* Reversing */
+    .SectionMainCardElecInfoLinkReversing{
+        bottom: 7vw;
+        padding: 2vw 4vw;
+        right: 5vw;
+        font-size: 4vw;
+    }
+    
 }
