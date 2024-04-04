@@ -19,7 +19,7 @@ body {
 
 .Header{
     background:var(--secondary-bg-gradient) ;
-    width: 100vw;
+    width: auto;
     height: 10vw;
     display: flex;
     align-items: center;
@@ -63,7 +63,7 @@ body {
 }
 
 .ColorText{
-    color:#F24C4C ;
+    color:#f03232 ;
 }
 
 .MainContentText{
@@ -106,18 +106,24 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+
+    /* Header */
     .Header{
         height: 13vw;
     }
     .HeaderTitle{
         font-size: 3.4vw;
     }
+
+    /* MainContent */
     .MainContent{
         width: 58vw;
     }
     .MainContentImg{
         width: 58vw;
     }
+
+    /* LinkGouv */
     .LinkGouv{
        top : 26vw;
     }
@@ -131,6 +137,16 @@ body {
 }
 
 @media screen and (max-width: 430px) {
+
+    /* nav menu mobil */
+    .NavMenuLinkMobile.open::before{
+        background: var(--secondary-bg-gradient) !important;
+    }
+    #NavMenuMobileButton{
+        background: var(--secondary-bg-gradient) !important;
+    }
+
+    /* Header */
     .Header{
         height: 36vw;
     }
@@ -138,6 +154,8 @@ body {
         font-size: 8vw;
         width: 75vw;
     }
+
+    /* MainContent */
     .MainContent{
         width: 75vw;
     }
@@ -152,6 +170,8 @@ body {
     .MainContentText{
         font-size: 4.3vw;
     }
+
+    /* LinkGouv */
     .LinkGouv{
         top : 68vw;
         left: 50%;
