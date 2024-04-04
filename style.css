@@ -2,6 +2,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a{
+    color: #fff;
+}
+
 :root {
     --main-font-color: #37474F;
     --secondary-font-color: white;
