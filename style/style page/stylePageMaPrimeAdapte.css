@@ -1,0 +1,180 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main-font-color: #37474F;
+    --secondary-font-color: white;
+    --main-bg-gradient: linear-gradient(90deg, rgba(6, 3, 66, 1) 0%, rgba(35, 88, 168, 1) 44%, rgba(0, 180, 216, 1) 100%);
+    --secondary-bg-gradient: linear-gradient(90deg, rgba(156,31,91,1) 0%, rgba(242,76,78,1) 47%, rgba(242,76,126,1) 100%);
+    --secondary-font-family: 'krub', sans-serif;
+    --main-border-radus: 15px;
+}
+
+.NavMenu{
+    background: var(--secondary-bg-gradient) !important ;
+}
+
+/* Header */
+
+.Header{
+    background:var(--secondary-bg-gradient) ;
+    width: 100vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: var(--secondary-font-color);
+    transform: translatey(-1vw);
+}
+
+.HeaderTitle{
+    margin: 0;
+    font-size: 2.5vw;
+    font-family: var(--secondary-font-family);
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* MainContent */
+
+.MainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vw;
+    margin-bottom: 7vw;
+    width: 45vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.MainContentImg{
+    width: 45vw;
+    height: auto;
+}
+
+.MainContentTitle{
+    font-size: 2.5vw;
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+}
+
+.ColorText{
+    color:#F24C4C ;
+}
+
+.MainContentText{
+    font-size: 1.5vw;
+}
+
+/* LinkGouv */
+
+.LinkGouv{
+    background:var(--secondary-bg-gradient) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.8vw 0.7vw;
+    width: 22vw;
+    border-radius: 7px;
+    text-decoration: none;
+    color: var(--secondary-font-color);
+    position: absolute;
+    top: 22vw;
+    left: 5vw;
+}
+
+.LinkGouvImg{
+    width: 5vw;
+    height: auto;
+    border-radius: 7px;
+}
+
+.LinkGouvText{
+    font-size: 1.3vw;
+    font-weight: 700;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.LinkGouvIcon{
+    width: 1.3vw;
+    height: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .Header{
+        height: 13vw;
+    }
+    .HeaderTitle{
+        font-size: 3.4vw;
+    }
+    .MainContent{
+        width: 58vw;
+    }
+    .MainContentImg{
+        width: 58vw;
+    }
+    .LinkGouv{
+       top : 26vw;
+    }
+    .MainContentTitle{
+        font-size: 3.6vw;
+        margin-bottom: 0.7vw;
+    }
+    .MainContentText{
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .Header{
+        height: 36vw;
+    }
+    .HeaderTitle{
+        font-size: 8vw;
+        width: 75vw;
+    }
+    .MainContent{
+        width: 75vw;
+    }
+    .MainContentImg{
+        width: 75vw;
+        margin-top: 20vw;
+    }  
+    .MainContentTitle{
+        font-size: 5.6vw;
+        margin-bottom: 0.7vw;
+    }
+    .MainContentText{
+        font-size: 4.3vw;
+    }
+    .LinkGouv{
+        top : 68vw;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 2vw 2.4vw;
+        width: 70vw;
+        border-radius: 5px;
+    }
+    .LinkGouvImg{
+        width: 13vw;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    .LinkGouvText{
+        font-size: 4vw;
+        font-weight: 700;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    
+    .LinkGouvIcon{
+        width: 4vw;
+        height: auto;
+    }
+}

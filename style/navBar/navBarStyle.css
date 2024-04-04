@@ -75,6 +75,7 @@ li{
 }
 
 @media screen and (max-width: 430px){
+    
     .NavMenu{
         height: 13vh;
         flex-direction: row-reverse;
@@ -149,7 +150,6 @@ li{
         transform: translateX(-50%);
         background: var(--main-bg-gradient);
     }
-
 
     .NavMenuLinkMobile{
         background: var(--main-bg-gradient);
