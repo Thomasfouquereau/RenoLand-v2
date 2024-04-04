@@ -213,6 +213,8 @@ body {
 
     .SectionCarousel::after {
         border-radius: 3vw;
+        width: 85vw;
+        bottom: -3vw;
     }
 
     /* Section Carousel Left */
@@ -240,7 +242,7 @@ body {
     .SectionCarouselRightTitle {
         border-radius: 0px 0px 5px 5px;
         left: 5vw;
-        font-size: 3vw;
+        font-size: 4.3vw;
         padding: 1vw 3vw;
     }
 
@@ -250,7 +252,7 @@ body {
     .SectionCarouselRightLink {
         border-radius: 5px 5px 0px 0px;
         right: 5vw;
-        font-size: 2.5vw;
+        font-size: 4vw;
         padding: 1vw 3vw;
     }
 
@@ -262,9 +264,9 @@ body {
 
     .SectionCarouselLeftButtonSuivant,
     .SectionCarouselLeftButton {
-        font-size: 3vw;
+        font-size: 4vw;
         border-radius: 5px;
-        width: 23vw;
+        width: 30vw;
     }
 
     .SectionCarouselLeftButton {
