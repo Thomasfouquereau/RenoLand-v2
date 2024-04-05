@@ -2,7 +2,20 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-a{
+a {
+    color: #fff;
+}
+
+/* couleur surlignage texte*/
+/* pour Firefox */
+::-moz-selection {
+    background-color: #CF2E87;
+    color: #fff;
+}
+
+/* pour Safari et Chrome */
+::selection {
+    background-color: #CF2E87;
     color: #fff;
 }
 
@@ -33,6 +46,7 @@ a{
     border-radius: var(--main-border-radus);
     margin-right: 5vw;
     transform: translateY(3vh);
+    object-fit: cover;
 }
 
 .HeaderInfo {
@@ -240,7 +254,7 @@ a{
 }
 
 @media screen and (max-width: 430px) {
-    
+
     .SectionNavMain {
         height: 150vw;
     }
@@ -425,7 +439,7 @@ a{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.5vw;
-    
+
 }
 
 @media screen and (max-width: 900px) {
@@ -437,17 +451,21 @@ a{
         border-radius: 6px;
     }
 
-    .SectionMainCardPrice{
+    .SectionMainCardPrice {
         font-size: 2vw;
     }
 
-    /* No Reversing *//* Reversing */
-    .SectionMainCard,.SectionMainCardReversing{
+    /* No Reversing */
+    /* Reversing */
+    .SectionMainCard,
+    .SectionMainCardReversing {
         width: 72vw;
     }
 
-    /* No Reversing *//* Reversing */
-    .SectionMainCardInfo,.SectionMainCardInfoReversing{
+    /* No Reversing */
+    /* Reversing */
+    .SectionMainCardInfo,
+    .SectionMainCardInfoReversing {
         margin-right: 5.2vw;
     }
 }
@@ -462,8 +480,10 @@ a{
     }
 
 
-    /* No Reversing *//* Reversing */
-    .SectionMainCard,.SectionMainCardReversing {
+    /* No Reversing */
+    /* Reversing */
+    .SectionMainCard,
+    .SectionMainCardReversing {
         width: 100vw;
         height: 130vw;
         border-radius: 5px;
@@ -481,13 +501,17 @@ a{
         justify-content: space-around;
     }
 
-    /* No Reversing *//* Reversing */
-    .SectionMainCardImgInfo,.SectionMainCardImgInfoReversing {
+    /* No Reversing */
+    /* Reversing */
+    .SectionMainCardImgInfo,
+    .SectionMainCardImgInfoReversing {
         flex-direction: column
     }
 
-    /* No Reversing */ /* Reversing */
-    .SectionMainCardImg,.SectionMainCardImgReversing {
+    /* No Reversing */
+    /* Reversing */
+    .SectionMainCardImg,
+    .SectionMainCardImgReversing {
         border-radius: 5px;
         min-width: 80vw;
         min-height: 60vw;
@@ -696,35 +720,41 @@ a{
         transform: translateX(1vw);
     }
 
-    /* No Reversing *//* Reversing */
-    .SectionMainCardElecPrice,.SectionMainCardElecPriceReversing {
+    /* No Reversing */
+    /* Reversing */
+    .SectionMainCardElecPrice,
+    .SectionMainCardElecPriceReversing {
         font-size: 2vw;
         transform: translateY(-3vw);
     }
 
-    /* No Reversing *//* Reversing */
-    .SectionMainCardElecInfoLink,.SectionMainCardElecInfoLinkReversing{
+    /* No Reversing */
+    /* Reversing */
+    .SectionMainCardElecInfoLink,
+    .SectionMainCardElecInfoLinkReversing {
         border-radius: 5px;
         font-size: 1.3vw;
         bottom: -7.5vw;
     }
 
-    .SectionMainCardInfoTitle{
+    .SectionMainCardInfoTitle {
         font-size: 2.5vw;
         margin-bottom: 0;
     }
 
-    .SectionMainCardInfoText{
+    .SectionMainCardInfoText {
         font-size: 1.5vw;
     }
 
-     /* all*/
+    /* all*/
 }
 
 @media screen and (max-width: 430px) {
 
-    /* No Reversing *//* Reversing */
-    .SectionMainCardElec,.SectionMainCardElecReversing {
+    /* No Reversing */
+    /* Reversing */
+    .SectionMainCardElec,
+    .SectionMainCardElecReversing {
         width: 100vw;
         height: 140vw;
         border-radius: 5px;
@@ -733,13 +763,17 @@ a{
         margin-top: 40vw;
     }
 
-    /* No Reversing *//* Reversing */
-    .SectionMainCardElecImgInfo,.SectionMainCardElecImgInfoReversing {
+    /* No Reversing */
+    /* Reversing */
+    .SectionMainCardElecImgInfo,
+    .SectionMainCardElecImgInfoReversing {
         flex-direction: column
     }
 
-    /* No Reversing */ /* Reversing */
-    .SectionMainCardElecImg,.SectionMainCardElecImgReversing {
+    /* No Reversing */
+    /* Reversing */
+    .SectionMainCardElecImg,
+    .SectionMainCardElecImgReversing {
         border-radius: 5px;
         min-width: 80vw;
         min-height: 60vw;
@@ -747,15 +781,19 @@ a{
         margin-left: 50%;
     }
 
-    /* No Reversing *//* Reversing */
-    .SectionMainCardElecPriceLink,.SectionMainCardElecPriceLinkReversing {
+    /* No Reversing */
+    /* Reversing */
+    .SectionMainCardElecPriceLink,
+    .SectionMainCardElecPriceLinkReversing {
         margin-right: 7.5vw;
         margin-left: 7.5vw;
         transform: translate(-0vw, -9vw);
     }
 
-    /* No Reversing *//* Reversing */
-    .SectionMainCardElecPrice,.SectionMainCardElecPriceReversing{
+    /* No Reversing */
+    /* Reversing */
+    .SectionMainCardElecPrice,
+    .SectionMainCardElecPriceReversing {
         background: none;
         font-size: 4.5vw;
         transform: translateY(-10vw);
@@ -764,7 +802,7 @@ a{
     }
 
     /* No Reversing */
-    .SectionMainCardElecInfoLink{
+    .SectionMainCardElecInfoLink {
         bottom: 11.5vw;
         padding: 2vw 4vw;
         font-size: 3.5vw;
@@ -774,19 +812,19 @@ a{
     }
 
     /* Reversing */
-    .SectionMainCardElecInfoLinkReversing{
+    .SectionMainCardElecInfoLinkReversing {
         bottom: 11.5vw;
         right: 5vw;
         font-size: 3.5vw;
         padding: 0.8vh 5vw;
         border-radius: 5px;
     }
-    
+
 }
 
 /* Section Map */
 
-.SectionMapCard{
+.SectionMapCard {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -795,14 +833,14 @@ a{
     margin-left: 0vw;
 }
 
-.SectionMapCardImg{
+.SectionMapCardImg {
     transform: translateX(10vw);
     border-radius: 20px;
     width: 60vw;
     height: 35vw;
 }
 
-.SectionMapCardHoraire{
+.SectionMapCardHoraire {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -817,25 +855,29 @@ a{
     height: 40vw;
 }
 
-.SectionMapCardHoraireTitle{
+.SectionMapCardHoraireTitle {
     font-size: 2vw;
     margin-bottom: 0.6vw;
     margin-top: 0;
 }
-.SectionMapCardHoraireText{
+
+.SectionMapCardHoraireText {
     font-size: 1.4vw;
 }
-.SectionMapCardHoraireTableTitle{
+
+.SectionMapCardHoraireTableTitle {
     font-size: 1.4vw;
     margin-bottom: 0.3vw;
     margin-top: 4vw;
 }
-.SectionMapCardHoraireTableListe{
+
+.SectionMapCardHoraireTableListe {
     list-style: none;
     font-size: 1vw;
     padding: 0;
 }
-.SectionMapCardInfoLink{
+
+.SectionMapCardInfoLink {
     background-color: var(--secondary-font-color);
     color: var(--main-font-color);
     padding: 0.5vw 2vw;
@@ -848,88 +890,101 @@ a{
     font-family: var(--secondary-font-family);
 }
 
-@media screen and (max-width: 900px){
-    .SectionMapCard{
+@media screen and (max-width: 900px) {
+    .SectionMapCard {
         margin-right: 7vw;
     }
-    .SectionMapCardImg{
+
+    .SectionMapCardImg {
         transform: translateX(8vw);
         width: 60vw;
 
     }
-    .SectionMapCardHoraire{
+
+    .SectionMapCardHoraire {
         padding-right: 2vw;
         padding-left: 8vw;
         width: 80vw;
         height: 50vw;
     }
-    .SectionMapCardHoraireTitle{
+
+    .SectionMapCardHoraireTitle {
         font-size: 2.5vw;
         margin-bottom: 0.6vw;
         margin-top: 0;
     }
-    .SectionMapCardHoraireText{
+
+    .SectionMapCardHoraireText {
         font-size: 2vw;
     }
-    .SectionMapCardHoraireTableTitle{
+
+    .SectionMapCardHoraireTableTitle {
         font-size: 1.7vw;
         margin-bottom: 0.3vw;
         margin-top: 3vw;
     }
-    .SectionMapCardHoraireTableListe{
+
+    .SectionMapCardHoraireTableListe {
         list-style: none;
         font-size: 1.4vw;
         padding: 0;
         margin-bottom: 2vw;
     }
-    .SectionMapCardInfoLink{
+
+    .SectionMapCardInfoLink {
         border-radius: 5px;
         font-size: 1.6vw;
     }
-    li{
+
+    li {
         padding-bottom: 0 !important;
     }
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 430px) {
 
-    .SectionMapCard{
+    .SectionMapCard {
         flex-direction: column;
         margin-right: 0;
         margin-top: 0vw;
     }
 
-    .SectionMapCardImg{
+    .SectionMapCardImg {
         transform: translateX(0vw);
         transform: translateY(10vw);
         width: 80vw;
         height: 50vw;
     }
-    .SectionMapCardHoraire{
+
+    .SectionMapCardHoraire {
         padding-right: 0vw;
         padding-left: 0vw;
         width: 95vw;
         height: 100vw;
     }
 
-    .SectionMapCardHoraireTitle{
+    .SectionMapCardHoraireTitle {
         font-size: 6vw;
         margin-bottom: 0.6vw;
     }
-    .SectionMapCardHoraireText{
+
+    .SectionMapCardHoraireText {
         font-size: 4.5vw;
     }
-    .SectionMapCardHoraireTableTitle{
+
+    .SectionMapCardHoraireTableTitle {
         font-size: 4vw;
         margin-bottom: 0.3vw;
         margin-top: 7vw;
     }
-    .SectionMapCardHoraireTableListe{
+
+    .SectionMapCardHoraireTableListe {
         list-style: none;
         font-size: 3vw;
         margin-bottom: 6vw;
     }
-    .SectionMapCardInfoLink{
+
+    .SectionMapCardInfoLink {
         border-radius: 5px;
         font-size: 4vw;
         padding: 0.8vw 6vw;

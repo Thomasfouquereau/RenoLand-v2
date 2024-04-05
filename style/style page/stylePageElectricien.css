@@ -1,0 +1,393 @@
+:root {
+    --main-font-color: #37474F;
+    --secondary-font-color: white;
+    --main-bg-gradient: linear-gradient(90deg, rgba(255, 180, 27, 1) 0%, rgba(255, 197, 40, 1) 63%, rgba(254, 228, 64, 1) 100%);
+    --secondary-bg-gradient: linear-gradient(90deg, rgba(255, 180, 27, 1) 0%, rgba(255, 197, 40, 1) 63%, rgba(254, 228, 64, 1) 100%);
+    --secondary-font-family: 'krub', sans-serif;
+    --main-border-radus: 15px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.Header,.NavMenu{
+    background: var(--secondary-bg-gradient) !important;
+}
+
+/* Header______________________________________________________ */
+
+.SectionHeaderInfo {
+    background: var(--secondary-bg-gradient);
+    color: var(--secondary-font-color);
+    width: 68vw;
+    height: 30vw;
+    padding: 3vw;
+    position: relative;
+    margin-left: 5vw;
+    margin-top: 15vw;
+    margin-bottom: 15vw;
+    border-radius: var(--main-border-radus);
+}
+
+.SectionHeaderInfo::after {
+    content: "";
+    background-color: rgba(254, 228, 64, 1);
+    width: 5vw;
+    height: 30vw;
+    padding: 3vw;
+    position: absolute;
+    top: 0;
+    right: -15vw;
+    border-radius: var(--main-border-radus);
+}
+
+.SectionHeaderInfoTitle {
+    font-size: 3.5vw;
+    margin-top: 0;
+}
+
+.SectionHeaderInfoText {
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 900px) {
+    .SectionHeaderInfo {
+        margin-bottom: 10vw;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .SectionHeaderInfo {
+        border-radius: 5px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 80vw;
+        height: auto;
+        padding: 7vw;
+    }
+
+    .SectionHeaderInfo::after {
+        display: none;
+    }
+
+    .SectionHeaderInfoTitle {
+        font-size: 7vw;
+    }
+
+    .SectionHeaderInfoText {
+        font-size: 3.5vw;
+    }
+
+}
+
+/* Section Carousel______________________________________________________ */
+
+.SectionCarousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    margin-bottom: 15vw;
+}
+
+.SectionCarousel::after {
+    content: "";
+    background: var(--secondary-bg-gradient);
+    width: 70vw;
+    height: 18vw;
+    position: absolute;
+    bottom: -2vw;
+    z-index: -99;
+    border-radius: var(--main-border-radus);
+}
+
+/* Section Carousel Left */
+/* Section Carousel Right */
+.SectionCarouselLeft,
+.SectionCarouselRight {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Section Carousel Left */
+/* Section Carousel Right */
+.SectionCarouselLeftImgInfo,
+.SectionCarouselRightImgInfo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 41vw;
+    position: relative;
+}
+
+/* Section Carousel Left */
+/* Section Carousel Right */
+.SectionCarouselLeftImg,
+.SectionCarouselRightImg {
+    width: 41vw;
+    height: 27vw;
+    object-fit: cover;
+    border-radius: var(--main-border-radus);
+}
+
+/* Section Carousel Left */
+/* Section Carousel Right */
+.SectionCarouselLeftTitle,
+.SectionCarouselRightTitle {
+    font-size: 1.7vw;
+    left: 2vw;
+    padding: 0.6vw 2vw;
+    border-radius: 0px 0px 17px 17px;
+}
+
+.SectionCarouselLeftLink,
+.SectionCarouselRightLink,
+.SectionCarouselLeftTitle,
+.SectionCarouselRightTitle {
+    position: absolute;
+    color: var(--secondary-font-color);
+    text-transform: capitalize;
+    font-style: italic;
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    background: var(--secondary-bg-gradient);
+}
+
+/* Section Carousel Left */
+/* Section Carousel Right */
+.SectionCarouselLeftLink,
+.SectionCarouselRightLink {
+    bottom: 0;
+    right: 2vw;
+    font-size: 1.3vw;
+    padding: 0.6vw 2vw;
+    border-radius: 17px 17px 0px 0px;
+}
+
+/* Section Carousel Left */
+.SectionCarouselLeftButtonSuivant {
+    display: none;
+}
+
+/* Section Carousel Left */
+/* Section Carousel Left */
+/* Section Carousel Right */
+.SectionCarouselLeftButton,
+.SectionCarouselLeftButtonSuivant,
+.SectionCarouselRightButton {
+    margin-top: 2vw;
+    padding: 0.6vw 2vw;
+    border: none;
+    background-color: var(--secondary-font-color);
+    border-radius: var(--main-border-radus);
+    font-size: 1.3vw;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 900px) {
+
+    .SectionCarousel {
+        margin-bottom: 7vw;
+    }
+
+    .SectionCarouselLeftTitle,
+    .SectionCarouselRightTitle {
+        border-radius: 0px 0px 8px 8px;
+    }
+
+    /* Section Carousel Left */
+    /* Section Carousel Right */
+    .SectionCarouselLeftLink,
+    .SectionCarouselRightLink {
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    /* Section Carousel Left */
+    /* Section Carousel Right */
+    .SectionCarouselLeftButton,
+    .SectionCarouselRightButton {
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .SectionCarousel::after {
+        border-radius: 3vw;
+        width: 85vw;
+        bottom: -3vw;
+    }
+
+    /* Section Carousel Left */
+    .SectionCarouselLeftImgInfo {
+        width: 100vw;
+    }
+
+    /* Section Carousel Right */
+    /* Section Carousel Right */
+    .SectionCarouselRightImgInfo,
+    .SectionCarouselRightButton {
+        display: none;
+    }
+
+    /* Section Carousel Left */
+    .SectionCarouselLeftImg {
+        width: 100vw;
+        height: 60vw;
+        border-radius: 5px;
+    }
+
+    /* Section Carousel Left */
+    /* Section Carousel Right */
+    .SectionCarouselLeftTitle,
+    .SectionCarouselRightTitle {
+        border-radius: 0px 0px 5px 5px;
+        left: 5vw;
+        font-size: 4.3vw;
+        padding: 1vw 3vw;
+    }
+
+    /* Section Carousel Left */
+    /* Section Carousel Right */
+    .SectionCarouselLeftLink,
+    .SectionCarouselRightLink {
+        border-radius: 5px 5px 0px 0px;
+        right: 5vw;
+        font-size: 4vw;
+        padding: 1vw 3vw;
+    }
+
+    .SectionCarouselButton,
+    .SectionCarouselLeftButtonSuivant {
+        display: flex;
+        justify-content: center
+    }
+
+    .SectionCarouselLeftButtonSuivant,
+    .SectionCarouselLeftButton {
+        font-size: 4vw;
+        border-radius: 5px;
+        width: 30vw;
+    }
+
+    .SectionCarouselLeftButton {
+        margin-right: 6vw;
+    }
+
+}
+
+/* SectionInfo______________________________________________________ */
+
+.SectionInfoContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45vw;
+    margin-left: 50%;
+    margin-bottom: 15vw;
+    transform: translateX(-50%);
+}
+
+.SectionInfoContentTitle {
+    font-size: 2.5vw;
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+}
+
+.ColorText {
+    color: #2358A8;
+}
+
+.SectionInfoContentText {
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 900px) {
+
+    /* SectionInfo */
+    .SectionInfoContent {
+        width: 58vw;
+        margin-bottom: 7vw;
+    }
+
+    .SectionInfoContentImg {
+        width: 58vw;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    /* SectionInfo */
+    .SectionInfoContent {
+        width: 75vw;
+    }
+
+    .SectionInfoContentImg {
+        width: 75vw;
+        margin-top: 20vw;
+    }
+
+    .SectionInfoContentTitle {
+        font-size: 5.6vw;
+        margin-bottom: 0.7vw;
+    }
+
+    .SectionInfoContentText {
+        font-size: 4.3vw;
+    }
+}
+
+/* SectionPartenaire______________________________________________________ */
+
+.SectionPartenaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--secondary-bg-gradient);
+    padding: 4vw;
+    width: 80vw;
+    margin-left: 50%;
+    margin-bottom: 15vw;
+    transform: translateX(-50%);
+    border-radius: var(--main-border-radus);
+}
+
+.SectionPartenaireTitle {
+    font-size: 3vw;
+    text-transform: capitalize;
+    font-family: var(--secondary-font-family);
+    color: var(--secondary-font-color);
+    font-weight: 700;
+    margin-bottom: 2vw;
+}
+
+.SectionPartenaireContainerImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80vw;
+}
+
+.SectionPartenaireImg {
+    padding: 2vw;
+    width: 20vw;
+    border-radius: 3vw;
+}
+
+@media screen and (max-width: 430px) {
+    .SectionPartenaire{
+        width: 88vw;
+    }
+    .SectionPartenaireTitle{
+        font-size: 6vw;
+    }
+    .SectionPartenaireImg {
+        padding: 2vw;
+        width: 30vw;
+        border-radius: 3vw;
+    }
+}
