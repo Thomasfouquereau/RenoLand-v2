@@ -80,13 +80,13 @@ a {
 @media screen and (max-width: 900px) {
     .Header {
         transform: translateY(-0.5vh);
-        height: 25vh;
+        height: 25vw;
     }
 
     .HeaderImg {
         transform: translateY(3vh);
         width: 45vw;
-        height: 28vh;
+        height: 25vw;
         margin-bottom: 1vh;
     }
 
@@ -233,7 +233,7 @@ a {
 
 @media screen and (max-width: 900px) {
     .SectionNav {
-        margin-top: 5vh;
+        margin-top: 8vh;
     }
 
     .SectionTitle {
@@ -443,6 +443,10 @@ a {
 }
 
 @media screen and (max-width: 900px) {
+
+    .SectionMainCard,.SectionMainCardReversing{
+        transform: translateX(0);
+    }
 
     /* all*/
     .SectionMainCardInfoLink {
@@ -714,6 +718,7 @@ a {
 
     /* Reversing */
     .SectionMainCardElecReversing {
+        align-items: flex-end;
         width: 75vw;
         height: 26vw;
         border-radius: 5px;
