@@ -21,7 +21,6 @@ body {
     background: var(--secondary-bg-gradient);
     color: var(--secondary-font-color);
     width: 68vw;
-    height: 30vw;
     padding: 3vw;
     position: relative;
     margin-left: 5vw;
@@ -34,8 +33,8 @@ body {
     content: "";
     background-color: rgba(254, 228, 64, 1);
     width: 5vw;
-    height: 30vw;
-    padding: 3vw;
+    height: 100%;
+    padding: 0vw 3vw;
     position: absolute;
     top: 0;
     right: -15vw;
