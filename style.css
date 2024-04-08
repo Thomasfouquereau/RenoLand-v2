@@ -450,6 +450,7 @@ a {
     .SectionMainCard,
     .SectionMainCardReversing {
         transform: translateX(0);
+        width: 82vw;
     }
 
     /* all*/
@@ -461,13 +462,6 @@ a {
 
     .SectionMainCardPrice {
         font-size: 2vw;
-    }
-
-    /* No Reversing */
-    /* Reversing */
-    .SectionMainCard,
-    .SectionMainCardReversing {
-        width: 72vw;
     }
 
     /* No Reversing */
