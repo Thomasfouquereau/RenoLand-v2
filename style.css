@@ -1,9 +1,44 @@
+@-webkit-keyframes pulsate-bck {
+    0% {
+        -webkit-transform: scale(0.2);
+                transform: scale(0.2);
+        opacity: 0.8;
+      }
+      80% {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        opacity: 0.2;
+      }
+      100% {
+        -webkit-transform: scale(2.2);
+                transform: scale(2.2);
+        opacity: 0;
+      }
+    }
+  @keyframes pulsate-bck {
+    0% {
+        -webkit-transform: scale(0.2);
+                transform: scale(0.2);
+        opacity: 0.8;
+      }
+      80% {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        opacity: 0.2;
+      }
+      100% {
+        -webkit-transform: scale(2.2);
+                transform: scale(2.2);
+        opacity: 0;
+      }
+    }
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
 a {
-    color: #fff;
+    color: #fff;   
 }
 
 /* couleur surlignage texte*/
@@ -77,6 +112,22 @@ a {
     font-weight: 600;
     font-style: italic;
     font-family: var(--secondary-font-family);
+    position: relative;
+}
+
+.HeaderInfoMore::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--main-border-radus);
+    background: #ffffff46;
+    transition: width 0.3s;
+    -webkit-animation: pulsate-bck 2s infinite ;
+	        animation: pulsate-bck 2s infinite ;
 }
 
 @media screen and (max-width: 900px) {
@@ -108,6 +159,10 @@ a {
     .HeaderInfoMore {
         font-size: 1.2vw;
         padding: 0.5vh 1vw;
+        border-radius: 6px;
+    }
+
+    .HeaderInfoMore::after {
         border-radius: 6px;
     }
 }
@@ -434,6 +489,22 @@ a {
     font-weight: 600;
     font-style: italic;
     font-family: var(--secondary-font-family);
+    position: relative;
+}
+
+.SectionMainCardInfoLink::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--main-border-radus);
+    background: #ffffff6c;
+    transition: width 0.3s;
+    -webkit-animation: pulsate-bck 2s infinite ;
+	        animation: pulsate-bck 2s infinite ;
 }
 
 .SectionMainCardPrice {
@@ -462,6 +533,10 @@ a {
 
     .SectionMainCardPrice {
         font-size: 2vw;
+    }
+
+    .SectionMainCardInfoLink::after{
+        border-radius: 6px;
     }
 
     /* No Reversing */
@@ -657,6 +732,22 @@ a {
     z-index: 999;
 }
 
+.SectionMainCardElecInfoLink::after, .SectionMainCardElecInfoLinkReversing::after{
+    z-index: -99;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--main-border-radus);
+    background: #ffffff;
+    transition: width 0.3s;
+    -webkit-animation: pulsate-bck 2s infinite ;
+            animation: pulsate-bck 2s infinite ;
+
+}
+
 /* Reversing */
 .SectionMainCardElecInfoLinkReversing {
     background-color: var(--secondary-font-color);
@@ -738,6 +829,10 @@ a {
         border-radius: 5px;
         font-size: 1.3vw;
         bottom: -7.5vw;
+    }
+
+    .SectionMainCardElecInfoLink::after, .SectionMainCardElecInfoLinkReversing::after{
+        border-radius: 5px;
     }
 
     .SectionMainCardInfoTitle {
