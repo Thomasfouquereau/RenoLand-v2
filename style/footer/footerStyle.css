@@ -1,0 +1,153 @@
+:root {
+    --main-font-color: #37474F;
+    --secondary-font-color: white;
+    --main-bg-gradient: linear-gradient(90deg, rgba(6, 3, 66, 1) 0%, rgba(35, 88, 168, 1) 44%, rgba(0, 180, 216, 1) 100%);
+    --secondary-bg-gradient: linear-gradient(90deg, #30cfd0 0%, #330867 100%);
+    --third-bg-gradient: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    --secondary-font-family: 'krub', sans-serif;
+    --main-border-radus: 15px;
+}
+
+.SectionFooter{
+    background-color: #1E1E1E;
+    color: var(--secondary-font-color);
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SectionFooterContent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95vw;
+}
+
+.SectionFooterContentLeft, .SectionFooterContentRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 25vw;
+    height: 10vw;
+}
+
+.SectionFooterContentCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vw;
+    padding: 0;
+}
+
+.SectionFooterContentCenterList{
+    list-style: none;
+    font-family: var(--secondary-font-family);
+    font-size: 0.8vw;
+    text-transform: capitalize;
+}
+
+.SectionFooterContentRightContact{
+    background-color: white;
+    color: var(--main-font-color);
+    padding: 0.5vw 2vw;
+    border-radius: var(--main-border-radus);
+    border: none;
+    font-size: 0.8vw;
+    font-weight: 600;
+    font-style: italic;
+    font-family: var(--secondary-font-family);
+}
+.SectionFooterContentRightImg{
+    width: 3vw;
+    height: 3vw;
+}
+
+.SectionFooterCopyright{
+    font-family: var(--secondary-font-family);
+    font-size: 0.8vw;
+    text-transform: capitalize;
+    margin-top: 2vw;
+}
+
+@media screen and (max-width: 900px) {
+
+    .SectionFooterContent{
+        justify-content: space-between;
+    }
+
+    .SectionFooterContentLeft, .SectionFooterContentRight{
+        height: 20vw;
+    }
+
+    .SectionFooterContentCenterList, .SectionFooterContentRightContact{
+        font-size: 1.5vw;
+    }
+
+    .SectionFooterContentCenter{
+        height: 20vw;
+    }
+
+    .SectionFooterContentCenterList{
+        padding: 3vw;
+    }
+
+    .SectionFooterContentRightContact{
+        padding: 1vw 4vw;
+    
+    }
+
+    .SectionFooterContentRightImg{
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .SectionFooterCopyright{
+        font-size: 1.5vw;
+    }
+    
+}
+
+@media  screen and (max-width: 430px){
+    
+    .SectionFooterContent{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .SectionFooterContentLeft, .SectionFooterContentRight{
+        width: 90vw;
+        height: 25vw;
+        margin-bottom: 5vw;
+    }
+
+    .SectionFooterContentCenter{
+        width: 90vw;
+        height: 28vw;
+        margin-bottom: 10vw;
+    }
+
+    .SectionFooterContentCenterList{
+        padding: 3vw;
+        font-size: 3vw;
+    }
+
+    .SectionFooterContentRightContact{
+        padding: 1vw 6vw;
+        font-size: 3vw;
+    }
+
+    .SectionFooterContentRightImg{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .SectionFooterCopyright{
+        font-size: 2.5vw;
+    }
+
+}

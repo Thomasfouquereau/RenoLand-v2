@@ -23,7 +23,8 @@ a {
     --main-font-color: #37474F;
     --secondary-font-color: white;
     --main-bg-gradient: linear-gradient(90deg, rgba(6, 3, 66, 1) 0%, rgba(35, 88, 168, 1) 44%, rgba(0, 180, 216, 1) 100%);
-    --secondary-bg-gradient: linear-gradient(90deg, rgba(255, 180, 27, 1) 0%, rgba(255, 197, 40, 1) 63%, rgba(254, 228, 64, 1) 100%);
+    --secondary-bg-gradient: linear-gradient(90deg, #30cfd0 0%, #330867 100%);
+    --third-bg-gradient: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
     --secondary-font-family: 'krub', sans-serif;
     --main-border-radus: 15px;
 }
@@ -121,6 +122,7 @@ a {
 
     .HeaderImg {
         width: 86vw;
+        height: 70vw;
         margin-bottom: 1vh;
         margin-right: 0px;
         margin-top: 5vw;
@@ -444,7 +446,8 @@ a {
 
 @media screen and (max-width: 900px) {
 
-    .SectionMainCard,.SectionMainCardReversing{
+    .SectionMainCard,
+    .SectionMainCardReversing {
         transform: translateX(0);
     }
 
@@ -819,12 +822,41 @@ a {
     /* Reversing */
     .SectionMainCardElecInfoLinkReversing {
         bottom: 11.5vw;
-        right: 5vw;
+        right: 60vw;
         font-size: 3.5vw;
         padding: 0.8vh 5vw;
         border-radius: 5px;
     }
+}
 
+/* SectionMainCardPlomberie */
+
+.SectionMainCardPlomberie {
+    background: var(--third-bg-gradient);
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    border-radius: var(--main-border-radus);
+    margin-top: 10vw;
+    color: var(--secondary-font-color);
+    transform: translateX(7vw);
+}
+
+@media screen and (max-width: 900px) {
+    .SectionMainCardPlomberie {
+        width: 72vw;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .SectionMainCardPlomberie {
+        width: 100vw;
+        height: 130vw;
+        border-radius: 5px;
+        justify-content: space-around;
+        margin-top: 45vw;
+    }
 }
 
 /* Section Map */
