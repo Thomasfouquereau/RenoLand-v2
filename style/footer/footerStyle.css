@@ -52,8 +52,8 @@
 }
 
 .SectionFooterContentRightContact{
-    background-color: white;
-    color: var(--main-font-color);
+    background-color: #00B4D8;
+    color: var(--secondary-font-color);
     padding: 0.5vw 2vw;
     border-radius: var(--main-border-radus);
     border: none;
