@@ -9,6 +9,10 @@
     --main-border-radus: 15px;
 }
 
+img{
+    object-fit: cover;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;

@@ -1,0 +1,3 @@
+.MainNavContainer, .Header, .NavMenu, .MainNavCardLink, .MainNavCardNavLink  {
+    background: var(--secondary-bg-gradient) !important;
+}
