@@ -1,0 +1,319 @@
+:root {
+    --main-font-color: #37474F;
+    --secondary-font-color: white;
+    --main-bg-gradient: linear-gradient(90deg, rgba(6, 3, 66, 1) 0%, rgba(35, 88, 168, 1) 44%, rgba(0, 180, 216, 1) 100%);
+    --secondary-bg-gradient: linear-gradient(90deg, #30cfd0 0%, #330867 100%);
+    --third-bg-gradient: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    --MPA-bg-gradient: linear-gradient(90deg, rgba(156, 31, 91, 1) 0%, rgba(242, 76, 78, 1) 47%, rgba(242, 76, 126, 1) 100%);
+    --secondary-font-family: 'krub', sans-serif;
+    --main-border-radus: 15px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.Header {
+    height: 15vw !important;
+}
+
+.HeaderInfo {
+    text-align: center;
+}
+
+/* MainNavContainer */
+
+.MainNavContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: var(--main-bg-gradient);
+    transform: translateY(-1vw);
+    padding-bottom: 15vw;
+}
+
+.MainNavCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 26vw;
+    background-color: white;
+    border-radius: var(--main-border-radus);
+    margin: 1vw;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    position: relative;
+}
+
+.MainNavCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.512);
+    transition: 0.5s;
+}
+
+.MainNavCardInfo {
+    display: flex;
+    width: 100%;
+    height: 3vw;
+    align-items: center;
+    margin-left: 0.7vw;
+    margin-top: 0.7vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.MainNavCardInfoImg {
+    width: 2.7vw;
+    height: 2.7vw;
+    margin-right: 1vw;
+
+}
+
+.MainNavCardInfoTitle {
+    font-size: 2vw;
+    font-weight: bold;
+    color: var(--main-font-color);
+}
+
+.MainNavCardImg {
+    border-radius: var(--main-border-radus) 0 var(--main-border-radus) 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 31vw;
+    height: 22vw;
+}
+
+.MainNavCardLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--main-font-color);
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    background: var(--main-bg-gradient);
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.MainNavCardLinkIcon {
+    width: 1vw;
+    height: 1vw;
+    transform: translate(0.06vw, -0.01vw);
+}
+
+.MainNavCardLinkText {
+    display: none;
+    -webkit-animation: fadeIn 0.6s;
+    animation: fadeIn 0.6s;
+}
+
+.MainNavCard:hover .MainNavCardLink {
+    bottom: 43%;
+    right: 43%;
+    transform: translate(50%, 50%);
+    width: 15vw;
+    height: 2.5vw;
+    border-radius: var(--main-border-radus);
+}
+
+.MainNavCard:hover .MainNavCardLinkIcon {
+    display: none;
+}
+
+.MainNavCard:hover .MainNavCardLinkText {
+    display: block;
+    color: var(--secondary-font-color);
+    font-size: 1.3vw;
+}
+
+.MainNavCardN {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 26vw;
+    background-color: white;
+    border-radius: var(--main-border-radus);
+    margin: 1vw;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.MainNavCardNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.MainNavCardNavLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-bg-gradient);
+    height: 11vw;
+    width: 32vw;
+    border-radius: var(--main-border-radus);
+    font-size: 2.2vw;
+    text-transform: capitalize;
+    font-family: var(--secondary-font-family);
+    font-style: italic;
+    font-weight: bold;
+    transition: 1.2s;
+    background-size: 200% auto;
+    cursor: pointer;
+}
+
+.MainNavCardNavLink:hover {
+    background-position: right center;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .MainNavContainer{
+        padding-top: 3vw;
+    }
+    .MainNavCard,
+    .MainNavCardN {
+        width: 45vw;
+        height: 36vw;
+    }
+
+    .MainNavCardImg {
+        width: 41vw;
+        height: 31vw;
+    }
+
+    .MainNavCardInfo{
+        margin-left: 1vw;
+        margin-top: 1vw;
+    }
+
+    .MainNavCardInfoTitle{
+        font-size: 2.6vw;
+    }
+
+    .MainNavCardLink{
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .MainNavCardLinkIcon{
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .MainNavCard:hover .MainNavCardLink{
+        width: 25vw;
+        height: 5vw;
+    }
+
+    .MainNavCard:hover .MainNavCardLinkText{
+        font-size: 2.5vw;
+    }
+
+    .MainNavCardNavLink{
+        width: 41vw;
+        height: 16vw;
+    }
+
+    .MainNavCardNavLink{
+        font-size: 3.5vw;
+    }
+
+}
+@media screen and (max-width: 430px) {
+
+    .Header {
+        height: 37vw !important;
+    }
+    
+    .MainNavContainer{
+        padding-top: 0vw;
+        transform: translateY(-3vw);
+    }
+    .MainNavCard,
+    .MainNavCardN {
+        width: 85vw;
+        height: 60vw;
+        margin-top: 9vw;
+    }
+
+    .MainNavCardImg {
+        width: 78vw;
+        height: 51vw;
+    }
+
+    .MainNavCardInfo{
+        margin-left: 2vw;
+        margin-top: 2vw;
+    }
+
+    .MainNavCardInfoTitle{
+        font-size: 5vw;
+    }
+
+    .MainNavCardLink{
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .MainNavCardLinkIcon{
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .MainNavCard:hover .MainNavCardLink{
+        width: 40vw;
+        height: 10vw;
+    }
+
+    .MainNavCard:hover .MainNavCardLinkText{
+        font-size: 5vw;
+    }
+
+    .MainNavCardNavLink{
+        width: 76vw;
+        height: 25vw;
+    }
+
+    .MainNavCardNavLink{
+        font-size: 7vw;
+    }
+
+}
