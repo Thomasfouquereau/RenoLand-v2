@@ -108,19 +108,19 @@ select {
     border-radius: var(--main-border-radus);
 }
 
-.contactInfo{
+.contactInfo {
     font-size: 2.5vw;
     font-family: var(--secondary-font-family);
     font-weight: 700;
     color: var(--main-font-color);
-    text-align: center; 
+    text-align: center;
     margin-bottom: 5vw;
     width: 80vw;
     margin-left: 50%;
     transform: translateX(-50%);
 }
 
-.contactI{
+.contactI {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +128,7 @@ select {
     margin-bottom: 7vw;
 }
 
-.ContactIcon{
+.ContactIcon {
     width: 30vw;
     height: 20vw;
     display: flex;
@@ -138,7 +138,7 @@ select {
     border-radius: var(--main-border-radus);
 }
 
-.icon{
+.icon {
     width: 8vw;
     height: 8vw;
 }
@@ -156,6 +156,7 @@ select {
     .envoyer {
         height: 100%;
     }
+
     .envoyer {
         font-size: 2.3vw;
     }
@@ -167,13 +168,16 @@ select {
 }
 
 @media screen and (max-width:430px) {
-    .contactTitle{
+
+    .contactTitle {
         margin-top: 20vw;
         font-size: 8vw;
     }
-    .contact{
+
+    .contact {
         display: flex;
         flex-direction: column;
+        padding: 7vw;
     }
 
     input,
@@ -182,29 +186,39 @@ select {
     .envoyer {
         height: 10vw;
     }
+
     .envoyer {
         font-size: 4vw;
+        border-radius: 7px;
     }
 
     textarea {
-        height: calc(4.5vw * 4);
+        height: calc(4.5vw * 10);
     }
 
-    .contactInfo{
+    input,
+    textarea,
+    select {
+        border-radius: 7px;
+    }
+
+    .contactInfo {
         font-size: 6vw;
         margin-top: 15vw;
         margin-bottom: 10vw;
     }
 
-    .contactI{
+    .contactI {
         margin-bottom: 15vw;
     }
-    
-    .ContactIcon{
+
+    .ContactIcon {
         width: 40vw;
         height: 30vw;
+        border-radius: 7px;
     }
-    .icon{
+
+    .icon {
         width: 10vw;
         height: 10vw;
     }
