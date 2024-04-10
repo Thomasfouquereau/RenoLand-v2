@@ -274,6 +274,18 @@ a {
     transform: translateY(6vw);
 }
 
+.SectionNavCardLinkL{
+    transition: 0.5s;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.SectionNavCardLinkL:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
 .SectionNavCardLinkImg {
     width: 16vw;
     height: 20vw;
