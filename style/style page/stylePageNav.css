@@ -2,7 +2,7 @@
     --main-font-color: #37474F;
     --secondary-font-color: white;
     --main-bg-gradient: linear-gradient(90deg, rgba(6, 3, 66, 1) 0%, rgba(35, 88, 168, 1) 44%, rgba(0, 180, 216, 1) 100%);
-    --secondary-bg-gradient: linear-gradient(90deg, #30cfd0 0%, #330867 100%);
+    --secondary-bg-gradient: linear-gradient(45deg, rgb(217, 134, 15),rgb(225, 99, 66));
     --third-bg-gradient: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
     --MPA-bg-gradient: linear-gradient(90deg, rgba(156, 31, 91, 1) 0%, rgba(242, 76, 78, 1) 47%, rgba(242, 76, 126, 1) 100%);
     --secondary-font-family: 'krub', sans-serif;

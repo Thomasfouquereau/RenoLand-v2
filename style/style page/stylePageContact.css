@@ -1,0 +1,211 @@
+:root {
+    --main-font-color: #37474F;
+    --secondary-font-color: white;
+    --main-bg-gradient: linear-gradient(90deg, rgba(6, 3, 66, 1) 0%, rgba(35, 88, 168, 1) 44%, rgba(0, 180, 216, 1) 100%);
+    --secondary-bg-gradient: linear-gradient(90deg, rgb(195, 39, 2) 0%, rgb(224, 164, 60) 100%);
+    --third-bg-gradient: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    --secondary-font-family: 'krub', sans-serif;
+    --main-border-radus: 15px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.contactTitle {
+    font-size: 2.5vw;
+    font-family: var(--secondary-font-family);
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--main-font-color);
+    text-align: center;
+    margin-top: 5vw;
+
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 26px;
+    width: 50vw;
+    background: var(--main-bg-gradient);
+    margin-bottom: 5vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 3vw;
+    border-radius: var(--main-border-radus);
+}
+
+.nom {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.prenom {
+    grid-area: 1 / 3 / 2 / 5;
+}
+
+.e-mail {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.description {
+    grid-area: 2 / 3 / 5 / 5;
+}
+
+.ville {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.telephone {
+    grid-area: 4 / 1 / 5 / 3;
+}
+
+.services {
+    grid-area: 5 / 1 / 6 / 3;
+}
+
+.envoyer {
+    grid-area: 5 / 3 / 6 / 5;
+    border-radius: var(--main-border-radus);
+    background-color: #2358A8;
+    color: var(--secondary-font-color);
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: var(--secondary-font-family);
+}
+
+::placeholder {
+    padding-left: 1vw;
+    font-style: italic;
+    font-family: var(--secondary-font-family);
+}
+
+input,
+select,
+option,
+.envoyer {
+    height: 2.5vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    height: calc(2vw * 5);
+    width: 100%;
+    resize: none;
+    padding-top: 1vw;
+}
+
+input,
+textarea,
+select {
+    box-shadow: inset 5px 5px 10px #bababa,
+        inset -5px -5px 10px #ffffff;
+    border-radius: var(--main-border-radus);
+}
+
+.contactInfo{
+    font-size: 2.5vw;
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    color: var(--main-font-color);
+    text-align: center; 
+    margin-bottom: 5vw;
+    width: 80vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.contactI{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 7vw;
+}
+
+.ContactIcon{
+    width: 30vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-bg-gradient);
+    border-radius: var(--main-border-radus);
+}
+
+.icon{
+    width: 8vw;
+    height: 8vw;
+}
+
+@media screen and (max-width:900px) {
+
+    .contact {
+        width: 80vw;
+        grid-row-gap: 15px;
+    }
+
+    input,
+    select,
+    option,
+    .envoyer {
+        height: 100%;
+    }
+    .envoyer {
+        font-size: 2.3vw;
+    }
+
+    textarea {
+        height: calc(4.5vw * 4);
+    }
+
+}
+
+@media screen and (max-width:430px) {
+    .contactTitle{
+        margin-top: 20vw;
+        font-size: 8vw;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input,
+    select,
+    option,
+    .envoyer {
+        height: 10vw;
+    }
+    .envoyer {
+        font-size: 4vw;
+    }
+
+    textarea {
+        height: calc(4.5vw * 4);
+    }
+
+    .contactInfo{
+        font-size: 6vw;
+        margin-top: 15vw;
+        margin-bottom: 10vw;
+    }
+
+    .contactI{
+        margin-bottom: 15vw;
+    }
+    
+    .ContactIcon{
+        width: 40vw;
+        height: 30vw;
+    }
+    .icon{
+        width: 10vw;
+        height: 10vw;
+    }
+}
