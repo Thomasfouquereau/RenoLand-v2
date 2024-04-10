@@ -199,7 +199,7 @@ select {
     input,
     textarea,
     select {
-        border-radius: 7px;
+        border-radius: 12px;
     }
 
     .contactInfo {
@@ -215,7 +215,6 @@ select {
     .ContactIcon {
         width: 40vw;
         height: 30vw;
-        border-radius: 7px;
     }
 
     .icon {
