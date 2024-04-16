@@ -89,8 +89,13 @@ option,
 .envoyer {
     height: 2.5vw;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    border: none;
+}
+
+select {
+    padding-left: 1vw;
+    font-style: italic;
+    font-family: var(--secondary-font-family);
 }
 
 textarea {
@@ -98,6 +103,7 @@ textarea {
     width: 100%;
     resize: none;
     padding-top: 1vw;
+    border: none;
 }
 
 input,
@@ -106,6 +112,12 @@ select {
     box-shadow: inset 5px 5px 10px #bababa,
         inset -5px -5px 10px #ffffff;
     border-radius: var(--main-border-radus);
+}
+
+select-option {
+    font-family: var(--secondary-font-family);
+    font-style: italic;
+    padding-left: 1vw;
 }
 
 .contactInfo {
@@ -128,19 +140,33 @@ select {
     margin-bottom: 7vw;
 }
 
-.ContactIcon {
+.ContactIcon,
+.ContactIconM {
     width: 30vw;
     height: 20vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: var(--main-bg-gradient);
     border-radius: var(--main-border-radus);
 }
 
+.ContactIconM {
+    display: none;
+}
+
 .icon {
     width: 8vw;
     height: 8vw;
+}
+
+.ContactTel {
+    font-size: 2vw;
+}
+
+.contactInfoM {
+    display: none;
 }
 
 @media screen and (max-width:900px) {
@@ -165,6 +191,32 @@ select {
         height: calc(4.5vw * 4);
     }
 
+    ::placeholder {
+        padding-left: 1.5vw;
+    }
+
+    .ContactIcon,
+    .ContactIconM {
+        display: flex;
+    }
+
+    .contactInfoM {
+        display: block;
+        font-size: 2.5vw;
+        font-family: var(--secondary-font-family);
+        font-weight: 700;
+        color: var(--main-font-color);
+        text-align: center;
+        margin-bottom: 5vw;
+        width: 80vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .ContactTel {
+        display: none;
+    }
 }
 
 @media screen and (max-width:430px) {
@@ -202,20 +254,30 @@ select {
         border-radius: 12px;
     }
 
+    ::placeholder {
+        padding-left: 2vw;
+    }
+    
     .contactInfo {
         font-size: 6vw;
         margin-top: 15vw;
         margin-bottom: 10vw;
     }
 
+    .contactInfoM {
+        font-size: 6vw;
+    }
+
     .contactI {
         margin-bottom: 15vw;
     }
 
-    .ContactIcon {
-        width: 40vw;
-        height: 30vw;
+    .ContactIcon,
+    .ContactIconM {
+        width: 45vw;
+        height: 35vw;
     }
+
 
     .icon {
         width: 10vw;

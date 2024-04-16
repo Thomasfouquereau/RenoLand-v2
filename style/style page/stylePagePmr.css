@@ -11,6 +11,15 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.Header{
+    height: 13vw !important;
+}
+
+.HeaderImg{
+    width: 30vw !important;
+    height: 20vw !important;
+}
+
 /* Header______________________________________________________ */
 
 .SectionHeaderInfo {
@@ -184,6 +193,15 @@ body {
 
 @media screen and (max-width: 900px) {
 
+    .Header{
+        height: 23vw !important;
+    }
+    
+    .HeaderImg{
+        width: 37vw !important;
+        height: 25vw !important;
+    }
+
     .SectionCarousel {
         margin-bottom: 7vw;
     }
@@ -209,6 +227,15 @@ body {
 }
 
 @media screen and (max-width: 430px) {
+
+    .Header{
+        height: 100% !important;
+    }
+    
+    .HeaderImg{
+        width: 88vw !important;
+        height: 50vw !important;
+    }
 
     .SectionCarousel::after {
         border-radius: 3vw;
