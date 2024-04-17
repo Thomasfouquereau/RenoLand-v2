@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="description" content="Votre description ici">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
+    <meta name="description"
+        content="Contactez-nous dès maintenant pour tous vos besoins. Notre équipe de professionnels est prête à répondre à vos questions, à vous fournir des devis et à planifier des interventions rapides et efficaces. N'hésitez pas à nous contacter pour une assistance personnalisée et un service de qualité.">
+    <link rel="icon" href="./addons/favIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../style/style page/stylePageContact.css">
     <link rel="stylesheet" href="../style/navBar/navBarStyle.css">
@@ -16,7 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap"
         rel="stylesheet">
 
-    <title>RenoLandes</title>
+    <title>RenoLandes Contact</title>
 </head>
 
 <body>
@@ -25,13 +26,13 @@
         <div class="NavMenu">
             <img class="NavMenuLogo" src="../addons/Logo RenoLandes V1s.svg" alt="logo renolandes">
             <ul class="NavMenuLink">
-                <li><a>Contact</a></li>
+                <li><a href="../page/pageContact.html">Contact</a></li>
                 <li><a href="../page/pageNavPmr.html">Aménagement PMR</a></li>
                 <li><a href="../page/pageNavBtp.html">Services BTP</a></li>
                 <li><a href="../page/pageMaPrimeAdapte.html">Ma prime adapt</a></li>
             </ul>
             <ul id="NavMenuLinkMobile" class="NavMenuLinkMobile">
-                <li><a>Contact</a></li>
+                <li><a href="../page/pageContact.html">Contact</a></li>
                 <li><a href="../page/pageNavPmr.html">Aménagement PMR</a></li>
                 <li><a href="../page/pageNavBtp.html">Services BTP</a></li>
                 <li><a href="../page/pageMaPrimeAdapte.html">Ma prime adapt</a></li>
@@ -46,24 +47,24 @@
 
     <main>
         <h2 class="contactTitle">Contact</h2>
-        <form class="contact">
+        <form class="contact" id="contactForm" action="sendmail.php" method="post">
             <div class="nom">
-                <input type="text" id="nom" name="nom" placeholder="nom">
+                <input type="text" id="nom" name="nom" placeholder="nom" required>
             </div>
             <div class="prenom">
-                <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
             </div>
             <div class="e-mail">
-                <input type="email" id="email" name="email" placeholder="e-mail">
+                <input type="email" id="email" name="email" placeholder="e-mail" required>
             </div>
             <div class="description">
-                <textarea id="description" name="description" placeholder="description"></textarea>
+                <textarea id="description" name="description" placeholder="description" required></textarea>
             </div>
             <div class="ville">
-                <input type="text" id="ville" name="ville" placeholder="ville">
+                <input type="text" id="ville" name="ville" placeholder="ville" required>
             </div>
             <div class="telephone">
-                <input type="tel" id="telephone" name="telephone" placeholder="telephone">
+                <input type="tel" id="telephone" name="telephone" placeholder="telephone" required>
             </div>
             <div class="services">
                 <select id="services" name="services">
@@ -72,17 +73,18 @@
                 </select>
             </div>
             <div class="envoyer">
-                <button class="envoyer" type="submit">Envoyer</button>
+                <button class="envoyer" type="submit" name="submit">Envoyer</button>
             </div>
         </form>
-        <p class="contactInfo">Appelez-nous du lundi au vendredi de 9h à 18h <span class="contactInfoM">ou envoyez-nous un message</span></p>
+        <p class="contactInfo">Appelez-nous du lundi au vendredi de 9h à 18h <span class="contactInfoM">ou envoyez-nous
+                un message</span></p>
         <div class="contactI">
             <a class="ContactIcon" href="tel:+33760007272">
-                <img class="icon" src="../addons/IconTel.svg">
+                <img class="icon" src="../addons/IconTel.svg" alt="icon de telephone">
                 <p class="ContactTel">07 60 00 72 72</p>
             </a>
             <a class="ContactIconM" href="sms:+33760007272?body=Message depuis le site RenoLandes">
-                <img class="icon" src="../addons/IconMessage.svg">
+                <img class="icon" src="../addons/IconMessage.svg" alt="icon de message">
             </a>
         </div>
     </main>
@@ -91,8 +93,7 @@
         <div class="SectionFooter">
             <div class="SectionFooterContent">
                 <div class="SectionFooterContentLeft">
-                    <span class="NavMenuLogoText"><a href="#">Renolandes</a></span>
-                    <a><img></a>
+                    <span class="NavMenuLogoText"><a href="../index.html">Renolandes</a></span>
                 </div>
 
                 <ul class="SectionFooterContentCenter">
@@ -102,8 +103,9 @@
                 </ul>
 
                 <div class="SectionFooterContentRight">
-                    <a class="SectionFooterContentRightContact" href="">Contact</a>
-                    <img class="SectionFooterContentRightImg" src="../addons/Logo RenoLandes V1s.svg">
+                    <a class="SectionFooterContentRightContact" href="../page/pageContact.html">Contact</a>
+                    <img class="SectionFooterContentRightImg" src="../addons/Logo RenoLandes V1s.svg"
+                        alt="logo RenoLandes">
                 </div>
             </div>
 
@@ -113,6 +115,7 @@
 
     <script src="../script.js"></script>
     <script src="../js/navMenu.js"></script>
+    <script src="../js/formulaire.js"></script>
 </body>
 
 </html>
