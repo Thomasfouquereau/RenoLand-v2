@@ -101,6 +101,7 @@ a {
     width: 35vw;
     margin-top: 0.7vw;
     margin-bottom: 1.5vw;
+    text-transform:inherit
 }
 
 .HeaderInfoMore {
