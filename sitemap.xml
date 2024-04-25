@@ -17,8 +17,47 @@
     </url>
     <url>
         <loc>https://www.renolandes.com/page/pageMaPrimeAdapte.html</loc>
-        <changefreq>yearly</changefreq>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    
+    <url>
+        <loc>https://www.renolandes.com/page/pageElectricienChauffage.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.renolandes.com/page/pageElectricienClim.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.renolandes.com/page/pageElectricienCompteurElectrique.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.renolandes.com/page/pageElectricienVmc.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.renolandes.com/page/pagePlombrie.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.renolandes.com/page/pagePmrDouche.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.renolandes.com/page/pagePmrMonteEscalier.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.renolandes.com/page/pagePmrRampe.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>

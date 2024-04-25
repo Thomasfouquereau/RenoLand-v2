@@ -152,7 +152,7 @@ li{
     }
 
     .NavMenuLinkMobile{
-        background: var(--main-bg-gradient);
+        background-color: #fff;
         position: absolute;
         list-style: none;
         bottom: 20vh;
