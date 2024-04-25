@@ -1,7 +1,19 @@
 <?php
-// Vérifiez si le formulaire a été soumis
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php';
+require 'vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+// Maintenant, vous pouvez accéder à vos variables d'environnement avec getenv()
+$smtp_host = getenv('SMTP_HOST');
+$smtp_username = getenv('SMTP_USERNAME');
+$smtp_password = getenv('SMTP_PASSWORD');
+
 if($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Récupérez les données du formulaire
     $nom = $_POST["nom"];
     $prenom = $_POST["prenom"];
     $email = $_POST["email"];
@@ -10,13 +22,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $telephone = $_POST["telephone"];
     $services = $_POST["services"];
 
-    // L'adresse e-mail à laquelle le message sera envoyé
     $to = "contact@renolandes.com";
-
-    // Le sujet du message
     $subject = "Nouveau message de $nom $prenom";
-
-    // Le contenu du message
     $message = "Nom: $nom\n".
                "Prénom: $prenom\n".
                "Email: $email\n".
@@ -25,17 +32,32 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                "Téléphone: $telephone\n".
                "Services: $services";
 
-    // Les en-têtes du message
-    $headers = "From: $email";
+    $mail = new PHPMailer(true);
 
-    // Envoyez le message
-    if(mail($to, $subject, $message, $headers)) {
-        echo "Message envoyé avec succès";
-    } else {
-        echo "Erreur lors de l'envoi du message";
+    try {
+        //Server settings
+        $mail->SMTPDebug = 2;                                 
+        $mail->isSMTP();                                      
+        $mail->Host = $smtp_host;  
+        $mail->SMTPAuth = true;                               
+        $mail->Username = $smtp_username;                 
+        $mail->Password = $smtp_password;                           
+        $mail->SMTPSecure = 'tls';                            
+        $mail->Port = 465;                                    
+
+        //Recipients
+        $mail->setFrom($email, $nom);
+        $mail->addAddress($to);     
+
+        //Content
+        $mail->isHTML(true);                                  
+        $mail->Subject = $subject;
+        $mail->Body    = $message;
+
+        $mail->send();
+        echo 'Message has been sent';
+    } catch (Exception $e) {
+        echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
     }
-} else {
-    // Si le formulaire n'a pas été soumis, affichez le code HTML
-    // (insérez ici votre code HTML)
 }
 ?>
