@@ -1,19 +1,10 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require 'vendor/autoload.php';
-require 'vendor/autoload.php';
-
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
-
-// Maintenant, vous pouvez accéder à vos variables d'environnement avec getenv()
-$smtp_host = getenv('SMTP_HOST');
-$smtp_username = getenv('SMTP_USERNAME');
-$smtp_password = getenv('SMTP_PASSWORD');
-
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+// Vérifiez si le formulaire a été soumis
 if($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupérez les données du formulaire
     $nom = $_POST["nom"];
     $prenom = $_POST["prenom"];
     $email = $_POST["email"];
@@ -22,8 +13,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $telephone = $_POST["telephone"];
     $services = $_POST["services"];
 
-    $to = "contact@renolandes.com";
-    $subject = "Nouveau message de $nom $prenom";
+    // L'adresse e-mail à laquelle le message sera envoyé
+    $to = "contactrenolandes@gmail.com";
+
+    // Le sujet du message
+    $subject = "mail de Renolandes de $nom $prenom pour $services";
+
+    // Le contenu du message
     $message = "Nom: $nom\n".
                "Prénom: $prenom\n".
                "Email: $email\n".
@@ -32,32 +28,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                "Téléphone: $telephone\n".
                "Services: $services";
 
-    $mail = new PHPMailer(true);
+    // Les en-têtes du message
+    $headers = "From: $email";
 
-    try {
-        //Server settings
-        $mail->SMTPDebug = 2;                                 
-        $mail->isSMTP();                                      
-        $mail->Host = $smtp_host;  
-        $mail->SMTPAuth = true;                               
-        $mail->Username = $smtp_username;                 
-        $mail->Password = $smtp_password;                           
-        $mail->SMTPSecure = 'tls';                            
-        $mail->Port = 465;                                    
-
-        //Recipients
-        $mail->setFrom($email, $nom);
-        $mail->addAddress($to);     
-
-        //Content
-        $mail->isHTML(true);                                  
-        $mail->Subject = $subject;
-        $mail->Body    = $message;
-
-        $mail->send();
-        echo 'Message has been sent';
-    } catch (Exception $e) {
-        echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+    // Envoyez le message
+    if(mail($to, $subject, $message, $headers)) {
+        echo "Message envoyé avec succès";
+        header("refresh:1;url=https://www.renolandes.com/page/pageContact.html");
+    } else {
+        echo "<p style='color: red; font-size: 20px;'>Échec de l'envoi du message...</p>";
+        // Redirigez apres 20 seconde l'utilisateur vers la page https://www.renolandes.com/page/pageContact.html
+        header("refresh:5;url=https://www.renolandes.com/page/pageContact.html");
     }
 }
 ?>

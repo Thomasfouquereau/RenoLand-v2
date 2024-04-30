@@ -383,12 +383,12 @@ body {
 }
 
 .SectionPartenaireTitle {
-    font-size: 3vw;
+    font-size: 3.5vw;
     text-transform: capitalize;
     font-family: var(--secondary-font-family);
     color: var(--secondary-font-color);
     font-weight: 700;
-    margin-bottom: 2vw;
+    margin-bottom: 4.5vw;
 }
 
 .SectionPartenaireContainerImg {
@@ -399,9 +399,13 @@ body {
 }
 
 .SectionPartenaireImg {
-    padding: 2vw;
-    width: 20vw;
+    width: 23vw;
+    height: 14vw;
     border-radius: 3vw;
+    object-fit:contain;
+    background-color: var(--secondary-font-color);
+    margin-bottom: 2vw;
+    margin-left: 1vw;
 }
 
 @media screen and (max-width: 430px) {

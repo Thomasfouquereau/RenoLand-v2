@@ -395,9 +395,13 @@ body {
 }
 
 .SectionPartenaireImg {
-    padding: 2vw;
-    width: 20vw;
+    width: 23vw;
+    height: 14vw;
     border-radius: 3vw;
+    object-fit:contain;
+    background-color: var(--secondary-font-color);
+    margin-bottom: 2vw;
+    margin-left: 1vw;
 }
 
 @media screen and (max-width: 430px) {
