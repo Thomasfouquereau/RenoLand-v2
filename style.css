@@ -744,6 +744,7 @@ a {
     left: -3.5vw;
     bottom: -9vw;
     z-index: 999;
+    border: #37474f2d 1px solid;
 }
 
 .SectionMainCardElecInfoLink::after, .SectionMainCardElecInfoLinkReversing::after{
