@@ -149,7 +149,14 @@ body {
     left: 2vw;
     padding: 0.6vw 2vw;
     border-radius: 0px 0px 17px 17px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
 }
+
+.SectionCarouselLeftTitle:hover,
+.SectionCarouselRightTitle:hover {
+    border-radius:  0px 0px 1.2vw 1.2vw;
+    padding: 1vw 2vw;
+} 
 
 .SectionCarouselLeftLink,
 .SectionCarouselRightLink,
@@ -161,7 +168,7 @@ body {
     font-style: italic;
     font-family: var(--secondary-font-family);
     font-weight: 700;
-    background-color: #FF6B6B;
+    background: var(--secondary-bg-gradient);
 }
 
 /* Section Carousel Left */
@@ -173,7 +180,14 @@ body {
     font-size: 1.3vw;
     padding: 0.6vw 2vw;
     border-radius: 17px 17px 0px 0px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
 }
+
+.SectionCarouselLeftLink:hover,
+.SectionCarouselRightLink:hover {
+    border-radius: 1.2vw 1.2vw 0px 0px;
+    padding: 1vw 2vw;
+} 
 
 /* Section Carousel Left */
 .SectionCarouselLeftButtonSuivant {
